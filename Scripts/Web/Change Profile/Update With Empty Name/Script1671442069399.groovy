@@ -21,5 +21,9 @@ WebUI.callTestCase(findTestCase('Web/Change Profile/ToProfile'), [:], FailureHan
 
 WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
 
-WebUI.setText(findTestObject(null), '')
+WebUI.clearText(findTestObject('Web/EditProfile/input_Fullname_name'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
+
+WebUI.verifyTextPresent('The name field is required.', false)
 
