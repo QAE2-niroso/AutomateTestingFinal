@@ -17,13 +17,25 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Web/Change Profile/ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
+'Dikondisikan sudah login sebagai yoshuadwi@gmail.com , nanti\r\n'
+WebUI.openBrowser('https://demo-app.online/login')
 
-WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
+WebUI.maximizeWindow()
 
-WebUI.clearText(findTestObject('Web/EditProfile/input_Fullname_name'), FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementVisible(findTestObject('Web/Login/input_Email_email'), 5)
 
-WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
+WebUI.setText(findTestObject('Web/Login/input_Email_email'), 'yoshuadwi@gmail.com')
 
-WebUI.verifyTextPresent('The name field is required.', false)
+WebUI.setText(findTestObject('Web/Login/input_Kata                                                            Sandi_password'), 
+    'yoshuadwisantoso06')
+
+WebUI.click(findTestObject('Web/Login/button_Login'))
+
+WebUI.waitForElementPresent(findTestObject('Web/Home/LogoUser'), 2)
+
+WebUI.mouseOver(findTestObject('Web/Home/LogoUser'))
+
+WebUI.click(findTestObject('Web/Home/a_My Account'))
+
+WebUI.click(findTestObject('Web/Dashboard/a_Profil'))
 
