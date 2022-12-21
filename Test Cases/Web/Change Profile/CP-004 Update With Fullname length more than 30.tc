@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CP-004 Update With Fullname length more than 30</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c0487fa3-4c51-4113-8252-f04e332b20f6</testCaseGuid>
+</TestCaseEntity>
