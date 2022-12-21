@@ -19,9 +19,17 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://demo-app.online/')
+WebUI.navigateToUrl(GlobalVariable.URL_demo)
 
-WebUI.click(findTestObject('Object Repository/Web/Register/a_Masuk'))
+WebUI.setViewPortSize(990, 1000)
 
-WebUI.click(findTestObject('Object Repository/Web/Register/a_Buat akun'))
+WebUI.click(findTestObject('Object Repository/Web/Register/Page_Be a Profressional Talent with Coding.ID/button_Toggle navigation'))
+
+WebUI.doubleClick(findTestObject('Object Repository/Web/Register/Page_Be a Profressional Talent with Coding.ID/body_Toggle navigationB'))
+
+WebUI.click(findTestObject('Object Repository/Web/Register/Page_Be a Profressional Talent with Coding.ID/a_Login'))
+
+WebUI.click(findTestObject('Object Repository/Web/Register/Page_Masuk untuk dapatkan akses di Coding.ID/span_Masuk'))
+
+WebUI.click(findTestObject('Object Repository/Web/Register/Page_Masuk untuk dapatkan akses di Coding.ID/a_Buat akun'))
 

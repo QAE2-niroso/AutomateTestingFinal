@@ -19,7 +19,11 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://demo-app.online/')
+WebUI.navigateToUrl(GlobalVariable.URL_demo)
 
-WebUI.click(findTestObject('Object Repository/Web/Register/button_Buat'))
+WebUI.setViewPortSize(990,1000)
+
+WebUI.click(findTestObject('Object Repository/Web/Register/Page_Be a Profressional Talent with Coding.ID/span_Toggle navigation_icon-bar'))
+
+WebUI.click(findTestObject('Object Repository/Web/Register/Page_Be a Profressional Talent with Coding.ID/a_Buat Akun'))
 
