@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Toggle navigation_icon-bar</name>
+   <tag></tag>
+   <elementGuidId>ef752301-abf1-42d3-accf-0671611468c2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.icon-bar</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='navbar-col']/div/nav/div/button/span[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>ecc02c7e-17c2-4cfd-9a06-7ea7ede1de7b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon-bar</value>
+      <webElementGuid>d9f869f8-99d9-4472-88b2-c83d493f305e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;navbar-col&quot;)/div[@class=&quot;wm-right-section&quot;]/nav[@class=&quot;navbar navbar-default&quot;]/div[@class=&quot;navbar-header&quot;]/button[@class=&quot;navbar-toggle collapsed&quot;]/span[@class=&quot;icon-bar&quot;]</value>
+      <webElementGuid>589acaf4-efef-42c9-be67-fdac63a2fc23</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='navbar-col']/div/nav/div/button/span[2]</value>
+      <webElementGuid>53d87513-7a30-48b1-8de6-ca97f0377f3f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span[2]</value>
+      <webElementGuid>294845f5-3002-40fa-b92f-1525d399746a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
