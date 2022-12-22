@@ -17,15 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.comment('Masuk ke dalam Halaman Buat Akun Baru dengan layar/layout seperti webapp')
+Mobile.comment('Masuk/Login dengan mengisi E-Mail dan Password valid  (sesuai requirement)')
 
-WebUI.openBrowser('')
+WS.sendRequest(findTestObject('API/LG-010'))
 
-WebUI.navigateToUrl(GlobalVariable.URL_demo)
-
-WebUI.setViewPortSize(990, 1000)
-
-WebUI.click(findTestObject('Object Repository/Web/Register/Page_Be a Profressional Talent with Coding.ID/span_Toggle navigation_icon-bar'))
-
-WebUI.click(findTestObject('Object Repository/Web/Register/Page_Be a Profressional Talent with Coding.ID/a_Buat Akun'))
+Mobile.comment('Login sukses dan muncul pesan status sukses dengan tampilan data format JSON berisikan list berikut:{"member_name","member_id","token","name","email","birth_date","whatsapp","referral","points","bio","position","photo","isPartner"} dengan status kode OK 200')
 
