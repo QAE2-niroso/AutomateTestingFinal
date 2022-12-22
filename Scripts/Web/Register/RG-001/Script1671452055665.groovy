@@ -17,11 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+Mobile.comment('Masuk ke dalam Halaman Buat Akun Baru dengan layar/layout seperti webapp')
+
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL_demo)
 
-WebUI.setViewPortSize(990,1000)
+WebUI.setViewPortSize(990, 1000)
 
 WebUI.click(findTestObject('Object Repository/Web/Register/Page_Be a Profressional Talent with Coding.ID/span_Toggle navigation_icon-bar'))
 
