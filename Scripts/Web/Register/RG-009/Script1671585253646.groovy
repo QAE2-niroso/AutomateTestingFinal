@@ -21,3 +21,5 @@ Mobile.callTestCase(findTestCase('Web/Register/RG-003'), [:], FailureHandling.ST
 
 WebUI.click(findTestObject('Web/Register/button_Buat'))
 
+WebUI.takeFullPageScreenshot()
+
