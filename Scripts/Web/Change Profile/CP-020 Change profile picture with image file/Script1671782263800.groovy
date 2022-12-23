@@ -18,7 +18,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-def file = RunConfiguration.getProjectDir() + '/Data Files/upload.docx'
+def file = RunConfiguration.getProjectDir() + '/Data Files/cowo.png'
 
 WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -28,5 +28,7 @@ WebUI.uploadFile(findTestObject('Web/EditProfile/input_changePhoto'), file)
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
 
-WebUI.verifyTextPresent('file must be Image', false)
+WebUI.verifyTextPresent('telah di edit', false)
+
+WebUI.verifyTextPresent('Berhasil', false)
 
