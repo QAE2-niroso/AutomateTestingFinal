@@ -17,15 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
-
-WebUI.setText(findTestObject('Web/EditProfile/input_Fullname_name'), 'Uvuwvwevwevwev Onyetemevew Ugweugwem Osas')
-
-WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-
-WebUI.verifyTextPresent('The name may not be greater than 30 characters.', false)
-
-WebUI.closeBrowser()
+WebUI.acceptAlert()
 

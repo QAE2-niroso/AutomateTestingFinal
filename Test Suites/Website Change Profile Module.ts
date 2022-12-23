@@ -40,14 +40,7 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6fe8964b-eab7-4709-ae63-24395a5b9664</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Web/Change Profile/CP-006 Upadate phone number with value lesthan 0</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>46a42c19-8bf7-4c96-a0bd-dba926ec26b9</guid>
+      <guid>51f60c67-bb58-4501-9fba-fa5086bcd80a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Web/Change Profile/CP-007 Upadate phone number length less than 10</testCaseId>

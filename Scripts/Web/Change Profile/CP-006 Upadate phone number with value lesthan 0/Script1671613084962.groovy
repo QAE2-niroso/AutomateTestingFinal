@@ -25,7 +25,8 @@ WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), '-89456123
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
 
-Harusnya message error selainn ini = WebUI.verifyTextPresent('The whatsapp must be between 10 and 12 digits.', false)
+//Harusnya message error selainn ini =
+WebUI.verifyTextPresent('The whatsapp must be between 10 and 12 digits.', false)
 
 WebUI.closeBrowser()
 
