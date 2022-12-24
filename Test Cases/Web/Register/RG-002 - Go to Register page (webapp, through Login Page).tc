@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Masuk ke dalam Halaman Buat Akun Baru dengan layar/layout seperti webapp Melaui Halaman Masuk (Login)</description>
+   <name>RG-002 - Go to Register page (webapp, through Login Page)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>56b49854-0890-43b9-86c2-dd8a04366d91</testCaseGuid>
+</TestCaseEntity>
