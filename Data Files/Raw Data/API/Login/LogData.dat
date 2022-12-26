@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description>data used for email adn password values (auto type object/String)</description>
+   <name>LogData</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>50a227ab-cea5-4640-9361-61345fc158b6</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>null null</data>
+   <data>837jgai%28%26908ote.nats null</data>
+   <data>837jgai%28%26908ote.nats P%40ssw0rd</data>
+   <data>believe%40gmail.com null</data>
+   <data>null P%40ssw0rd</data>
+   <data>restika%40grr.la P%40ssw0rd</data>
+   <data>cihek19445%40hempyl.com +8egja984j09gjw94ho%5Bp34%2Ch%27%3B</data>
+   <data>cihek19445%40hempyl.com P%40s</data>
+   <data>P%40ssw0rd cihek19445%40hempyl.com</data>
+   <data>cihek19445%40hempyl.com P%40ssw0rd</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>email</name>
+      <size>10</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>1</columnIndex>
+      <name>password</name>
+      <size>10</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

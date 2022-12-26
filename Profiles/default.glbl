@@ -14,4 +14,14 @@
       <initValue>'https://demo-app.online/api/login'</initValue>
       <name>URL_api_demo_login</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>10</initValue>
+      <name>shortTime</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>5</initValue>
+      <name>shrtTimeMin</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
