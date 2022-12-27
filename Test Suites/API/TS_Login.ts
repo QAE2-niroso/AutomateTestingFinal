@@ -16,7 +16,22 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/API/Login/LG-001</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>fc1a0386-8966-40e2-9565-8a4c1071081d</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/LoginData</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2d6af635-1ac7-4d3b-a3ac-bef51538a2f7</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>7909a153-57a4-4fcd-a41e-eeb530746d98</guid>
@@ -79,6 +94,27 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/API/Login/LG-010</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>ba73171f-b483-466c-8e53-dae15a7ffff4</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/LoginData</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7877a273-2348-4ad8-b91a-292fa0dac6dd</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7cb2ae71-9619-4fde-9130-5dd4a38edf59</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

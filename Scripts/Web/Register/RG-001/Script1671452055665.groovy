@@ -29,3 +29,5 @@ WebUI.click(findTestObject('Object Repository/Web/Register/Page_Be a Profression
 
 WebUI.click(findTestObject('Object Repository/Web/Register/Page_Be a Profressional Talent with Coding.ID/a_Buat Akun'))
 
+WebUI.takeScreenshot()
+
