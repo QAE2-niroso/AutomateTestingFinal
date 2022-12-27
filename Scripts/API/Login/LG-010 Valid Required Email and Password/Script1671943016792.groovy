@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.comment('Masuk/Login dengan mengisi E-Mail dan Password valid  (sesuai requirement)')
 
-WS.sendRequest(findTestObject('API/LG-010'))
+WS.sendRequest(findTestObject('API/LG-010', [('email') : USERNAME, ('password') : PASSWORD]))
 
 Mobile.comment('Login sukses dan muncul pesan status sukses dengan tampilan data format JSON berisikan list berikut:{"member_name","member_id","token","name","email","birth_date","whatsapp","referral","points","bio","position","photo","isPartner"} dengan status kode OK 200')
 
