@@ -23,8 +23,8 @@
   &quot;charset&quot;: &quot;UTF-8&quot;,
   &quot;parameters&quot;: [
     {
-      &quot;name&quot;: &quot;Name&quot;,
-      &quot;value&quot;: &quot; CPAPI-013&quot;,
+      &quot;name&quot;: &quot;name&quot;,
+      &quot;value&quot;: &quot;&quot;,
       &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     }
