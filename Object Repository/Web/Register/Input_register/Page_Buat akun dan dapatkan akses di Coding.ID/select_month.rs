@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_month</name>
+   <tag></tag>
+   <elementGuidId>c72701da-fe6a-4978-8000-c1201c577fb1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>select.monthselect</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Event'])[2]/following::select[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>475d4056-fab9-4f39-b96a-3f8d1bfa5361</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>monthselect</value>
+      <webElementGuid>01bc9fb5-48b8-4d49-8aa4-7af49cb810be</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>JanFebMarAprMayJunJulAugSepOctNovDec</value>
+      <webElementGuid>09b1503a-0702-403f-91d7-2573bb73a5d1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[@class=&quot;no-htmlimports no-flash no-proximity no-applicationcache blobconstructor blob-constructor cookies cors customprotocolhandler dataview eventlistener geolocation history no-ie8compat json notification queryselector serviceworker customevent postmessage svg templatestrings typedarrays websockets no-xdomainrequest webaudio webworkers no-contextmenu cssall audio canvas canvastext contenteditable emoji olreversed no-userdata video no-vml webanimations webgl adownload audioloop canvasblending todataurljpeg todataurlpng todataurlwebp canvaswinding no-ambientlight hashchange inputsearchevent pointerevents no-hiddenscroll no-mathml unicoderange no-touchevents no-unicode no-batteryapi no-battery-api crypto no-dart gamepads fullscreen indexeddb indexeddb-deletedatabase intl pagevisibility performance pointerlock quotamanagement requestanimationframe raf vibrate no-webintents no-lowbattery getrandomvalues backgroundblendmode cssanimations backdropfilter backgroundcliptext appearance exiforientation audiopreload&quot;]/body[1]/div[@class=&quot;daterangepicker ltr single auto-apply opensright show-calendar&quot;]/div[@class=&quot;drp-calendar left single&quot;]/div[@class=&quot;calendar-table&quot;]/table[@class=&quot;table-condensed&quot;]/thead[1]/tr[1]/th[@class=&quot;month&quot;]/select[@class=&quot;monthselect&quot;]</value>
+      <webElementGuid>ed87444a-8739-4089-951f-fc75e56ac946</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Event'])[2]/following::select[1]</value>
+      <webElementGuid>3e35dd4f-4212-4bb7-a1f3-257946150c47</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bootcamp'])[4]/following::select[1]</value>
+      <webElementGuid>72df3010-adb5-4d26-b075-1be7b1089ed3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Su'])[1]/preceding::select[2]</value>
+      <webElementGuid>88acc909-1ce7-4a24-81ae-cebf16b0610e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mo'])[1]/preceding::select[2]</value>
+      <webElementGuid>eff2bf01-2816-4df9-8e96-fa1a49f08069</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//select</value>
+      <webElementGuid>29bd5a95-8027-4050-80f5-45e2114c825c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[(text() = 'JanFebMarAprMayJunJulAugSepOctNovDec' or . = 'JanFebMarAprMayJunJulAugSepOctNovDec')]</value>
+      <webElementGuid>5bed1149-b96f-4bd4-9035-705d3af17afd</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
