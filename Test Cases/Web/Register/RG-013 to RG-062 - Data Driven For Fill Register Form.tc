@@ -1,124 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>test collection</description>
-   <name>RG-013 to RG-063 - Copy</name>
+   <name>RG-013 to RG-062 - Data Driven For Fill Register Form</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>dbebea4c-f56d-47d0-aaea-8683e991d1b8</testCaseGuid>
+   <testCaseGuid>cc61e595-d1c8-49da-9cd3-5715dc336ae9</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>5b21e4b3-3cc4-4cda-b106-673c632c4bf0</variableId>
+      <variableId>3b672f5b-1b2b-4665-ae55-99bf2c831b4b</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>8971330c-7c4b-42e9-b4d6-d4b91f24a794</variableId>
+      <variableId>20ff1b7d-4866-4df2-8533-772814ff8762</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>6fcd78bd-c7d8-4040-9b5e-55a3a06c0565</variableId>
+      <variableId>b5070f6a-68cf-4cb4-9462-cf38b0201cbb</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>00429467-e2d9-4ed9-a9bd-92d68045dfe9</variableId>
+      <variableId>0ee0ba99-467d-476e-9f18-14276a0d35ad</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>6c207312-358e-4cb1-a26b-d4758c5f6f6e</variableId>
+      <variableId>f2863ffe-a01e-430b-9f11-274483d3e6cd</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>14edad55-d14d-4a68-abb6-f5cfb2192007</variableId>
+      <variableId>0f5a5f9d-ed5f-4e36-92c7-b9d4b5d5aeee</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>20fbb656-e2b2-4279-b186-74d62ca363c8</variableId>
+      <variableId>285158e5-616d-40fb-9c2a-67bc254f4f4b</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>9ccb759d-f476-4b8d-a077-033adc9bfb77</variableId>
+      <variableId>56811f5f-c106-4e9f-9765-e99dad765b73</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>5c6f1f4c-048f-48b4-9520-ae1aaba641d4</variableId>
+      <variableId>8cc15c71-a8ab-46a9-83e0-0485d0e8d45e</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>5b21e4b3-3cc4-4cda-b106-673c632c4bf0</id>
+      <id>3b672f5b-1b2b-4665-ae55-99bf2c831b4b</id>
       <masked>false</masked>
       <name>Nama</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>8971330c-7c4b-42e9-b4d6-d4b91f24a794</id>
+      <id>20ff1b7d-4866-4df2-8533-772814ff8762</id>
       <masked>false</masked>
       <name>Year</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>6fcd78bd-c7d8-4040-9b5e-55a3a06c0565</id>
+      <id>b5070f6a-68cf-4cb4-9462-cf38b0201cbb</id>
       <masked>false</masked>
       <name>Month</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>00429467-e2d9-4ed9-a9bd-92d68045dfe9</id>
+      <id>0ee0ba99-467d-476e-9f18-14276a0d35ad</id>
       <masked>false</masked>
       <name>Date</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>6c207312-358e-4cb1-a26b-d4758c5f6f6e</id>
+      <id>f2863ffe-a01e-430b-9f11-274483d3e6cd</id>
       <masked>false</masked>
       <name>Email</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>14edad55-d14d-4a68-abb6-f5cfb2192007</id>
+      <id>0f5a5f9d-ed5f-4e36-92c7-b9d4b5d5aeee</id>
       <masked>false</masked>
       <name>WA</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>20fbb656-e2b2-4279-b186-74d62ca363c8</id>
+      <id>285158e5-616d-40fb-9c2a-67bc254f4f4b</id>
       <masked>false</masked>
       <name>Password</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>9ccb759d-f476-4b8d-a077-033adc9bfb77</id>
+      <id>56811f5f-c106-4e9f-9765-e99dad765b73</id>
       <masked>false</masked>
       <name>Confirm</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>5c6f1f4c-048f-48b4-9520-ae1aaba641d4</id>
+      <id>8cc15c71-a8ab-46a9-83e0-0485d0e8d45e</id>
       <masked>false</masked>
       <name>SnK</name>
    </variable>

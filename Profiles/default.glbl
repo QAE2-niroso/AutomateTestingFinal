@@ -11,6 +11,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'https://demo-app.online/daftar'</initValue>
+      <name>URL_demo_regist</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'https://demo-app.online/api/login'</initValue>
       <name>URL_api_demo_login</name>
    </GlobalVariableEntity>
