@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description>All testcase include some ways to register page (in webapp, web, and footer)</description>
-   <name>TS_Register_Form</name>
+   <name>TS_FillRegisterForm</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -18,9 +18,9 @@
       <iterationNameVariable>
          <defaultValue>''</defaultValue>
          <description></description>
-         <id>3b672f5b-1b2b-4665-ae55-99bf2c831b4b</id>
+         <id>8cc15c71-a8ab-46a9-83e0-0485d0e8d45e</id>
          <masked>false</masked>
-         <name>Nama</name>
+         <name>SnK</name>
       </iterationNameVariable>
       <testCaseId>Test Cases/Web/Register/RG-013 to RG-063</testCaseId>
       <testDataLink>
