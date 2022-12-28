@@ -27,7 +27,7 @@ WebUI.waitForElementPresent(findTestObject('Web/Login/input_Email_email'), 5)
 WebUI.setText(findTestObject('Web/Login/input_Email_email'), 'yoshuadwi@gmail.com')
 
 WebUI.setText(findTestObject('Web/Login/input_Kata                                                            Sandi_password'), 
-    'yoshuadwisantoso06')
+    'yoshuadwi06')
 
 WebUI.click(findTestObject('Web/Login/button_Login'))
 
