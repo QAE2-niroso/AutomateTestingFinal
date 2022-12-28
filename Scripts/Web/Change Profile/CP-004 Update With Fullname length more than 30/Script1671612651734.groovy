@@ -26,6 +26,10 @@ WebUI.setText(findTestObject('Web/EditProfile/input_Fullname_name'), 'Uvuwvwevwe
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
 
 WebUI.verifyTextPresent('The name may not be greater than 30 characters.', false)
+def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Fullname_name'), 'class')
+print(attr)
+
+WebUI.verifyEqual(attr.contains("is-invalid"), true)
 
 WebUI.closeBrowser()
 

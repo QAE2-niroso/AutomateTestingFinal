@@ -21,16 +21,31 @@ WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], Fai
 
 WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
 
-WebUI.clearText(findTestObject('Web/EditProfile/input_Fullname_name'), FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Web/EditProfile/input_Fullname_name'), 'uvuvwevwevwe onyetenyevwe ugwemuhwem osas')
+
+WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'huruf')
+
+WebUI.clearText(findTestObject('Web/EditProfile/input_BirthDay_birth_date'))
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
 
-WebUI.verifyTextPresent('The name field is required.', false)
+WebUI.verifyTextPresent('The name may not be greater than 30 characters.', false)
 
 def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Fullname_name'), 'class')
+
 print(attr)
 
-WebUI.verifyEqual(attr.contains("is-invalid"), true)
+WebUI.verifyEqual(attr.contains('is-invalid'), true)
+
+WebUI.comment('')
+
+WebUI.verifyTextPresent('The whatsapp must be a number.', false)
+
+attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'class')
+
+print(attr)
+
+WebUI.verifyEqual(attr.contains('is-invalid'), true)
 
 WebUI.closeBrowser()
 

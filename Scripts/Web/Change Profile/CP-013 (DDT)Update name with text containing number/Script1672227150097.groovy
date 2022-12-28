@@ -21,16 +21,17 @@ WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], Fai
 
 WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
 
-WebUI.clearText(findTestObject('Web/EditProfile/input_Fullname_name'), FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), '08522963741')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
 
-WebUI.verifyTextPresent('The name field is required.', false)
+WebUI.verifyTextPresent('Berhasil', false)
 
-def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Fullname_name'), 'class')
-print(attr)
+WebUI.click(findTestObject('Web/Dashboard-MyProfile/button_OK'))
 
-WebUI.verifyEqual(attr.contains("is-invalid"), true)
+def text = WebUI.getText(findTestObject('Web/Dashboard-MyProfile/p_phoneNumber'))
+
+WebUI.verifyEqual(text, '08522963741')
 
 WebUI.closeBrowser()
 

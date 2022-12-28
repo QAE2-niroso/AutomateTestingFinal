@@ -21,13 +21,13 @@ WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], Fai
 
 WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
 
-WebUI.clearText(findTestObject('Web/EditProfile/input_Fullname_name'), FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), '-8945612354')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
 
-WebUI.verifyTextPresent('The name field is required.', false)
-
-def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Fullname_name'), 'class')
+//Harusnya message error selainn ini =
+WebUI.verifyTextPresent('The whatsapp must be between 10 and 12 digits.', false)
+def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'class')
 print(attr)
 
 WebUI.verifyEqual(attr.contains("is-invalid"), true)

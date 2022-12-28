@@ -64,7 +64,7 @@
       <guid>b5b04ca9-0b7c-4b53-8cb0-32ccc6929d29</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Web/Change Profile/CP-020 Change profile picture with image file</testCaseId>
+      <testCaseId>Test Cases/Web/Change Profile/CP-019 Change profile picture with image file</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

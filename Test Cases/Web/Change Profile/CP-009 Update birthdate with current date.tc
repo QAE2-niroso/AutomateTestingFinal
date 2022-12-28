@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CP-009 Update birthdate with current date</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e448267b-5921-46f9-bc16-81424d4fdc60</testCaseGuid>
+</TestCaseEntity>
