@@ -21,18 +21,15 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 //WS.sendRequest(findTestObject('API/All-LG-0', [('email') : '', ('password') : '']))
-
 //def string_body = "{"+"\"email\":"+ email +","+"\"password\":"+password+"}"
-
 // println string_body
-
 //ResponseObject response =  WS.sendRequest(findTestObject('API/LG-DD(001-010)', [('req_body') : string_body]))
-
 //WS.verifyResponseStatusCode(response, 200)
 //assertThat(response.getStatusCode()).isEqualTo(401)
+for (int i = 1; i <= 10; i++) {
+    ResponseObject response = WS.sendRequest(findTestObject('API/LG-DD(001-010)', [('email') : findTestData('Raw Data/API/Login/LogData').getValue(
+                    1, i), ('password') : findTestData('Raw Data/API/Login/LogData').getValue(2, i)]))
 
-for (int i = 1;i<=10;i++) {
-	ResponseObject response =  WS.sendRequest(findTestObject('API/LG-DD(001-010)', 
-		[('email') : findTestData("Raw Data/API/Login/LogData").getValue(1,i), ('password') : findTestData("Raw Data/API/Login/LogData").getValue(2,i)]))
-	assertThat(response.getStatusCode()).isEqualTo(401)
+    assertThat(response.getStatusCode()).isEqualTo(401)
 }
+

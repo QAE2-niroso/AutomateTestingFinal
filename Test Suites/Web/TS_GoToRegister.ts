@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description>All testcase include some ways to register page (in webapp, web, and footer)</description>
-   <name>TS_Register</name>
+   <name>TS_GoToRegister</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
