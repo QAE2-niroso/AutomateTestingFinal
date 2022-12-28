@@ -21,11 +21,13 @@ WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], Fai
 
 WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
 
-WebUI.clearText(findTestObject('Web/EditProfile/input_BirthDay_birth_date'), FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), '+6289564311')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
 
-def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_BirthDay_birth_date'), 'class')
+WebUI.verifyTextPresent('The whatsapp must be a number.', false)
+
+def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'class')
 
 print(attr)
 

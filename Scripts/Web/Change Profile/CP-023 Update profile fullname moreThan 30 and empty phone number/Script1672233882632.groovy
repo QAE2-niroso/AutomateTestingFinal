@@ -21,19 +21,31 @@ WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], Fai
 
 WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
 
-Date today = new Date()
-String todaysDate = today.format('dd-MM-yyyy')
-print(todaysDate)
-WebUI.setText(findTestObject('Web/EditProfile/input_BirthDay_birth_date'), todaysDate)
+WebUI.setText(findTestObject('Web/EditProfile/input_Fullname_name'), 'uvuvwevwevwe onyetenyevwe ugwemuhwem osas')
+
+WebUI.clearText(findTestObject('Web/EditProfile/input_Phone_whatsapp'))
+
+WebUI.clearText(findTestObject('Web/EditProfile/input_BirthDay_birth_date'))
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
 
-WebUI.verifyTextPresent('Berhasil', false)
-WebUI.click(findTestObject('Web/Dashboard-MyProfile/button_OK'))
+WebUI.verifyTextPresent('The name may not be greater than 30 characters.', false)
 
-def birth_hasil = WebUI.getText(findTestObject('Web/Dashboard-MyProfile/p_birth_date'))
-print(birth_hasil)
-WebUI.verifyEqual(birth_hasil, "31-Dec-2015")
+def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Fullname_name'), 'class')
+
+print(attr)
+
+WebUI.verifyEqual(attr.contains('is-invalid'), true)
+
+WebUI.comment('')
+
+WebUI.verifyTextPresent('The whatsapp field is required.', false)
+
+attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'class')
+
+print(attr)
+
+WebUI.verifyEqual(attr.contains('is-invalid'), true)
 
 WebUI.closeBrowser()
 

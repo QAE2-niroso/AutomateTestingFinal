@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CP-025 Update profile fullname moreThan 30 and empty phone number lessThan 10 digit</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a36447d2-7b28-4ce1-9c38-72a7f122b890</testCaseGuid>
+</TestCaseEntity>

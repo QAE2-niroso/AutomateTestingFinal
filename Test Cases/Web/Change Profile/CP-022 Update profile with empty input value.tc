@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CP-022 Update profile with empty input value</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a4dba342-ec2c-4c8f-b08f-550b851c3ced</testCaseGuid>
+</TestCaseEntity>

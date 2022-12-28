@@ -21,15 +21,17 @@ WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], Fai
 
 WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
 
-WebUI.clearText(findTestObject('Web/EditProfile/input_BirthDay_birth_date'), FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Web/EditProfile/input_Fullname_name'), "Ol'Reliable")
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
 
-def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_BirthDay_birth_date'), 'class')
+WebUI.verifyTextPresent('Berhasil', false)
 
-print(attr)
+WebUI.click(findTestObject('Web/Dashboard-MyProfile/button_OK'))
 
-WebUI.verifyEqual(attr.contains('is-invalid'), true)
+def text = WebUI.getText(findTestObject('Web/Dashboard-MyProfile/p_name'))
+
+WebUI.verifyEqual(text, "Ol'Reliable")
 
 WebUI.closeBrowser()
 

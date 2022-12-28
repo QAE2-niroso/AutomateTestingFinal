@@ -6,15 +6,19 @@
    <elementGuidId>af17d48e-41d2-4da9-bee2-ac63f7f825f9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>button.swal-button.swal-button--confirm</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>(.//*[normalize-space(text()) and normalize-space(.)='Yocucu telah di edit'])[1]/following::button[1]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'OK' or . = 'OK')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.swal-button.swal-button--confirm</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>13793fd6-32a1-4e29-ace5-744002c9fcb3</webElementGuid>
+      <webElementGuid>5e3334c5-58a1-4106-bf22-7693eddc8614</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>class</name>
       <type>Main</type>
       <value>swal-button swal-button--confirm</value>
-      <webElementGuid>3d8544a3-65ca-482b-911f-674b57107100</webElementGuid>
+      <webElementGuid>295c6ee2-5ee6-4328-81c7-5f9214129aac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +42,7 @@
       <name>text</name>
       <type>Main</type>
       <value>OK</value>
-      <webElementGuid>35b0089f-c5a8-49b9-952c-ba6b982d2f46</webElementGuid>
+      <webElementGuid>5a01f0d6-6fdb-470a-ab51-4f870fd03443</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,55 +50,47 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[@class=&quot;light light-sidebar theme-white sidebar-gone&quot;]/div[@class=&quot;swal-overlay swal-overlay--show-modal&quot;]/div[@class=&quot;swal-modal&quot;]/div[@class=&quot;swal-footer&quot;]/div[@class=&quot;swal-button-container&quot;]/button[@class=&quot;swal-button swal-button--confirm&quot;]</value>
-      <webElementGuid>dc8f5907-bd6c-4b3e-9909-9007ce81e870</webElementGuid>
+      <webElementGuid>42c55adf-6727-4b06-82ba-3fd6ce980fdd</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
+      <name>.</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Yocucu telah di edit'])[1]/following::button[1]</value>
-      <webElementGuid>a7d9dd7f-a850-4ce5-9663-b0ca0f5cede3</webElementGuid>
+      <webElementGuid>8b6efbc5-bb47-4b83-a576-84038441d068</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
+      <name>.</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Berhasil'])[1]/following::button[1]</value>
-      <webElementGuid>f3f663da-1a6f-4c31-8e8f-c39555bcb52d</webElementGuid>
+      <webElementGuid>5dca8a19-858a-4718-9cc9-fb3f51d5c78a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
+      <name>.</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::button[1]</value>
-      <webElementGuid>6635771e-cf07-40ba-95d7-c5417c8c8616</webElementGuid>
+      <webElementGuid>293a879e-65c1-4df5-b263-e29970f8d5c6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
+      <name>.</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::button[1]</value>
-      <webElementGuid>d439cf43-a756-455b-8665-7461a499f6d5</webElementGuid>
+      <webElementGuid>48bd1d77-aaad-4c98-b249-3fe3856c79eb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
+      <name>.</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='OK']/parent::*</value>
-      <webElementGuid>a1ee1c0d-0cea-4bcb-bc45-5a344773f407</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[4]/div/button</value>
-      <webElementGuid>bb73302e-c113-47bf-b063-a2e2f38ac4dd</webElementGuid>
+      <webElementGuid>5e8976aa-a73d-40ad-b145-f53140df136e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +98,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[(text() = 'OK' or . = 'OK')]</value>
-      <webElementGuid>29edf0d7-1650-4413-90bc-2ef9cf8f255b</webElementGuid>
+      <webElementGuid>d745392e-cfd6-4f50-aa8c-ca36cfb5340c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

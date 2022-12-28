@@ -21,15 +21,17 @@ WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], Fai
 
 WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
 
-WebUI.clearText(findTestObject('Web/EditProfile/input_BirthDay_birth_date'), FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), '08976543214')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
 
-def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_BirthDay_birth_date'), 'class')
+WebUI.verifyTextPresent('Berhasil', false)
 
-print(attr)
+WebUI.click(findTestObject('Web/Dashboard-MyProfile/button_OK'))
 
-WebUI.verifyEqual(attr.contains('is-invalid'), true)
+def text = WebUI.getText(findTestObject('Web/Dashboard-MyProfile/p_phoneNumber'))
+
+WebUI.verifyEqual(text, '08976543214')
 
 WebUI.closeBrowser()
 
