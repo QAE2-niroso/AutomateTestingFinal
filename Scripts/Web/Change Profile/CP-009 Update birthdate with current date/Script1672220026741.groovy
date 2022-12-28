@@ -21,16 +21,19 @@ WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], Fai
 
 WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
 
-WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), '-8945612354')
+Date today = new Date()
+String todaysDate = today.format('dd-MM-yyyy')
+print(todaysDate)
+WebUI.setText(findTestObject('Web/EditProfile/input_BirthDay_birth_date'), todaysDate)
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
 
-//Harusnya message error selainn ini =
-WebUI.verifyTextPresent('The whatsapp must be between 10 and 12 digits.', false)
-def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'class')
-print(attr)
+WebUI.verifyTextPresent('Berhasil', false)
+WebUI.click(findTestObject('Web/Dashboard-MyProfile/button_OK'))
 
-WebUI.verifyEqual(attr.contains("is-invalid"), true)
+def birth_hasil = WebUI.getText(findTestObject('Web/Dashboard-MyProfile/p_birth_date'))
+print(birth_hasil)
+WebUI.verifyEqual(birth_hasil, "31-Dec-2015")
 
 WebUI.closeBrowser()
 

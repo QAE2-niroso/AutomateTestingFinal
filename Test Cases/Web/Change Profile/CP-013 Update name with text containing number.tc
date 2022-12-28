@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CP-013 Update name with text containing number</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c194f144-06c7-4d96-9c97-0fd5746005d7</testCaseGuid>
+</TestCaseEntity>

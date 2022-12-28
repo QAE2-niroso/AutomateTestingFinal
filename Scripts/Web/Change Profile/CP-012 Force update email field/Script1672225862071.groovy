@@ -21,16 +21,16 @@ WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], Fai
 
 WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
 
-WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), '-8945612354')
+def el=WebUI.removeObjectProperty(findTestObject('Web/EditProfile/input_Email_email'), 'disabled')
+WebUI.setText(el,"demo@gmail.com")
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
 
-//Harusnya message error selainn ini =
-WebUI.verifyTextPresent('The whatsapp must be between 10 and 12 digits.', false)
-def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'class')
-print(attr)
+WebUI.click(findTestObject('Web/Dashboard-MyProfile/button_OK'))
 
-WebUI.verifyEqual(attr.contains("is-invalid"), true)
+def text = WebUI.getText(findTestObject('Web/Dashboard-MyProfile/p_email'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyNotMatch('demo@gmail.com', text, false)
 
 WebUI.closeBrowser()
 

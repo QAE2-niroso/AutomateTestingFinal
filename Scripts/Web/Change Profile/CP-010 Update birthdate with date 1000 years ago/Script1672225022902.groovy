@@ -17,20 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
-
-WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), '-8945612354')
-
-WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-
-//Harusnya message error selainn ini =
-WebUI.verifyTextPresent('The whatsapp must be between 10 and 12 digits.', false)
-def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'class')
-print(attr)
-
-WebUI.verifyEqual(attr.contains("is-invalid"), true)
-
-WebUI.closeBrowser()
-
+//WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
+//
+//WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
+//
+//WebUI.setText(findTestObject('Web/EditProfile/input_BirthDay_birth_date'), "01-Jan-1900")
+//
+//WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
+//
+//WebUI.verifyTextPresent('Berhasil', false)
+//WebUI.click(findTestObject('Web/Dashboard-MyProfile/button_OK'))
+//
+//
+//def birth_hasil = WebUI.getText(findTestObject('Web/Dashboard-MyProfile/p_birth_date'))
+//print(birth_hasil)
+//WebUI.verifyEqual(birth_hasil, "31-Dec-1922")
+//
+//WebUI.closeBrowser()
+//
