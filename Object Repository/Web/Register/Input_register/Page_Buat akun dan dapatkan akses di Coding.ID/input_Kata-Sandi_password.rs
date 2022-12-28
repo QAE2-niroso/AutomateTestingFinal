@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Kata Sandi_password</name>
+   <name>input_Kata-Sandi_password</name>
    <tag></tag>
    <elementGuidId>8c7210bb-0b89-469d-8cff-29c7a21e196a</elementGuidId>
    <selectorCollection>

@@ -22,7 +22,7 @@
          <masked>false</masked>
          <name>SnK</name>
       </iterationNameVariable>
-      <testCaseId>Test Cases/Web/Register/RG-013 to RG-063</testCaseId>
+      <testCaseId>Test Cases/Web/Register/RG-013 to RG-062 - Data Driven For Fill Register Form</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>c7597c7f-15df-48e8-8727-e6885ad0afe9</id>
