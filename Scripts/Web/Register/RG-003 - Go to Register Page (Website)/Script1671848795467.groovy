@@ -21,12 +21,12 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL_demo)
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg03/rg-1.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg03/rg-1.png')
 
 WebUI.setViewPortSize(1366, 643)
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg03/rg-2.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg03/rg-2.png')
 
 WebUI.click(findTestObject('Object Repository/Web/Register/button_Buat'))
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg03/rg-3.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg03/rg-3.png')

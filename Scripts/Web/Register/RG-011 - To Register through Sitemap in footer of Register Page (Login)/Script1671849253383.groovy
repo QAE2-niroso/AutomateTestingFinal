@@ -21,8 +21,8 @@ Mobile.callTestCase(findTestCase('Web/Register/RG-003 - Go to Register Page (Web
 
 WebUI.click(findTestObject('Web/Register/Page_Be a Profressional Talent with Coding.ID/a_LoginF'))
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg11/rg-1.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg11/rg-1.png')
 
 WebUI.click(findTestObject('Web/Register/Page_Masuk untuk dapatkan akses di Coding.ID/a_Buat akun'))
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg11/rg-2.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg11/rg-2.png')
