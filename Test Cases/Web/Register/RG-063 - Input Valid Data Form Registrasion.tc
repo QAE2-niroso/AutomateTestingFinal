@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>test collection</description>
+   <description>Masukkan semua input beserta centangkan syarat dan ketentuan sesuai formatnya pada form di Halaman Buat Akun Baru dan klik daftar</description>
    <name>RG-063 - Input Valid Data Form Registrasion</name>
    <tag></tag>
    <comment></comment>

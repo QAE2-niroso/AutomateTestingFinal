@@ -27,5 +27,5 @@ WebUI.verifyElementPresent(findTestObject('Web/Register/Input_register/Verify/sp
 
 WebUI.verifyElementPresent(findTestObject('Web/Register/Input_register/Verify/div_verf'), 0)
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg64/01.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg64/01.png')
 

@@ -23,4 +23,4 @@ WebUI.navigateToUrl(GlobalVariable.URL_demo)
 
 WebUI.click(findTestObject('Object Repository/Web/Register/Page_Be a Profressional Talent with Coding.ID/a_Sign Up'))
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg07/rg-1.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg07/rg-1.png')

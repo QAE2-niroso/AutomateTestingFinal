@@ -21,5 +21,5 @@ Mobile.callTestCase(findTestCase('Web/Register/RG-003 - Go to Register Page (Web
 
 WebUI.click(findTestObject('Web/Register/button_Buat'))
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg09/rg-1.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg09/rg-1.png')
 

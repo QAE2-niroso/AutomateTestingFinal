@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description>All API test using requirement method POST for verifying url main authorization</description>
-   <name>TS_Login</name>
+   <name>API Login Single-Module</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
