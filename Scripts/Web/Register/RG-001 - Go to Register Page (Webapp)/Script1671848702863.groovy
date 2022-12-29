@@ -21,17 +21,17 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL_demo)
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg01/rg-1.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg01/rg-1.png')
 
 WebUI.setViewPortSize(990, 1000)
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg01/rg-2.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg01/rg-2.png')
 
 WebUI.click(findTestObject('Object Repository/Web/Register/Page_Be a Profressional Talent with Coding.ID/span_Toggle navigation_icon-bar'))
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg01/rg-3.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg01/rg-3.png')
 
 WebUI.click(findTestObject('Object Repository/Web/Register/Page_Be a Profressional Talent with Coding.ID/a_Buat Akun'))
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg01/rg-4.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg01/rg-4.png')
 

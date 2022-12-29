@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Klik Tombol Kirim Ulang pada Halaman Verifikasi Email</description>
    <name>RG-064 - Resend Verification Code</name>
    <tag></tag>
    <comment></comment>

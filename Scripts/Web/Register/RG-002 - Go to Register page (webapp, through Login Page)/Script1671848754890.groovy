@@ -21,29 +21,29 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL_demo)
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg02/rg-1.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg02/rg-1.png')
 
 WebUI.setViewPortSize(990, 1000)
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg02/rg-2.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg02/rg-2.png')
 
 WebUI.click(findTestObject('Object Repository/Web/Register/Page_Be a Profressional Talent with Coding.ID/button_Toggle navigation'))
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg02/rg-3.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg02/rg-3.png')
 
 WebUI.doubleClick(findTestObject('Object Repository/Web/Register/Page_Be a Profressional Talent with Coding.ID/body_Toggle navigationB'))
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg02/rg-4.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg02/rg-4.png')
 
 WebUI.click(findTestObject('Object Repository/Web/Register/Page_Be a Profressional Talent with Coding.ID/a_Login'))
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg02/rg-5.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg02/rg-5.png')
 
 WebUI.click(findTestObject('Object Repository/Web/Register/Page_Masuk untuk dapatkan akses di Coding.ID/span_Masuk'))
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg02/rg-6.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg02/rg-6.png')
 
 WebUI.click(findTestObject('Object Repository/Web/Register/Page_Masuk untuk dapatkan akses di Coding.ID/a_Buat akun'))
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg02/rg-7.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg02/rg-7.png')
 

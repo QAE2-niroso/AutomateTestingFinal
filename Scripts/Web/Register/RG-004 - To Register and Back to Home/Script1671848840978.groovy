@@ -21,16 +21,16 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL_demo)
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg04/rg-1.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg04/rg-1.png')
 
 WebUI.setViewPortSize(1366, 634)
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg04/rg-2.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg04/rg-2.png')
 
 WebUI.click(findTestObject('Object Repository/Web/Register/Page_Be a Profressional Talent with Coding.ID/button_BuatB'))
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg04/rg-3.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg04/rg-3.png')
 
 WebUI.click(findTestObject('Object Repository/Web/Register/Page_Buat akun dan dapatkan akses di Coding.ID/img_Toggle navigation_logonya'))
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg04/rg-4.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg04/rg-4.png')

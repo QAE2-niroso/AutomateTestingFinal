@@ -48,11 +48,11 @@ for (int i = 1; i <= 50; i++) {
         WebUI.check(findTestObject('Object Repository/Web/Register/Input_register/Page_Buat akun dan dapatkan akses di Coding.ID/syarat_ketentuan'))
     }
     
-    WebUI.takeScreenshot(('Screenshots/Web/Register/rg13/rg-13+' + String.valueOf(i - 1)) + '-00.png')
+    WebUI.takeScreenshotAsCheckpoint(('Screenshots/Web/Register/rg13/rg-13+' + String.valueOf(i - 1)) + '-00.png')
 
     WebUI.click(findTestObject('Object Repository/Web/Register/Input_register/Page_Buat akun dan dapatkan akses di Coding.ID/button_Daftar'))
 
-    WebUI.takeScreenshot(('Screenshots/Web/Register/rg13/rg-13+' + String.valueOf(i - 1)) + '-01.png')
+    WebUI.takeScreenshotAsCheckpoint(('Screenshots/Web/Register/rg13/rg-13+' + String.valueOf(i - 1)) + '-01.png')
 
     WebUI.openBrowser(GlobalVariable.URL_demo_regist)
 }

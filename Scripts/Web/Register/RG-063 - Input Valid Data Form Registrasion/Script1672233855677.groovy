@@ -39,9 +39,9 @@ WebUI.setText(findTestObject('Object Repository/Web/Register/Input_register/Page
 
 WebUI.check(findTestObject('Object Repository/Web/Register/Input_register/Page_Buat akun dan dapatkan akses di Coding.ID/syarat_ketentuan'))
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg63/01.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg63/01.png')
 
 WebUI.click(findTestObject('Object Repository/Web/Register/Input_register/Page_Buat akun dan dapatkan akses di Coding.ID/button_Daftar'))
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg63/02.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg63/02.png')
 

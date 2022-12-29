@@ -21,4 +21,4 @@ Mobile.callTestCase(findTestCase('Web/Register/RG-004 - To Register and Back to 
 
 WebUI.click(findTestObject('Object Repository/Web/Register/Page_Be a Profressional Talent with Coding.ID/button_BuatB'))
 
-WebUI.takeScreenshot('Screenshots/Web/Register/rg05/rg-1.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg05/rg-1.png')
