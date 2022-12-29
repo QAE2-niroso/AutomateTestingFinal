@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LG-017 reopen app after login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d1531bff-9b48-4f7a-bca6-35c1f7e09a17</testCaseGuid>
+</TestCaseEntity>
