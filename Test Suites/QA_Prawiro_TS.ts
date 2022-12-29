@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteCollectionEntity>
-   <description></description>
-   <name>TSC_All_In_automation</name>
+   <description>Test Cases Collection: Website_Register, API_Login, and Change-Profile_Mobile</description>
+   <name>QA_Prawiro_TS</name>
    <tag></tag>
    <delayBetweenInstances>0</delayBetweenInstances>
    <executionMode>SEQUENTIAL</executionMode>
