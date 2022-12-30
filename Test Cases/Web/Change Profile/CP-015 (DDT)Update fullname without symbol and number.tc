@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CP-015 (DDT)Update fullname without symbol and number</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>92fe7663-c054-45b9-9f10-185703f0dc25</testCaseGuid>
+</TestCaseEntity>

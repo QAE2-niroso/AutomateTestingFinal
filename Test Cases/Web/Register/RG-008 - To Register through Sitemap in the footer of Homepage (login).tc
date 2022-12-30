@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Masuk ke dalam Halaman Buat Akun Baru melalui Site Map (dengan Login) pada footer Beranda</description>
+   <name>RG-008 - To Register through Sitemap in the footer of Homepage (login)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0b83147a-fc24-4674-8040-68c9a887bbdc</testCaseGuid>
+</TestCaseEntity>

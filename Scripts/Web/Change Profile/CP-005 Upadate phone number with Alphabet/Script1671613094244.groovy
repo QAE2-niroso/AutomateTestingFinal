@@ -26,6 +26,10 @@ WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'e')
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
 
 WebUI.verifyTextPresent('The whatsapp must be a number.', false)
+def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'class')
+print(attr)
+
+WebUI.verifyEqual(attr.contains("is-invalid"), true)
 
 WebUI.closeBrowser()
 

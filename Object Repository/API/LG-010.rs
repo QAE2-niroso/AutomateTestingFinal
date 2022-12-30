@@ -15,13 +15,13 @@
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;email&quot;,
-      &quot;value&quot;: &quot;cihek19445@hempyl.com&quot;,
+      &quot;value&quot;: &quot;${email}&quot;,
       &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;Auto&quot;
     },
     {
       &quot;name&quot;: &quot;password&quot;,
-      &quot;value&quot;: &quot;P@ssw0rd&quot;,
+      &quot;value&quot;: &quot;${password}&quot;,
       &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     }
@@ -49,6 +49,20 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0602a207-749a-49ae-a932-780b93642d87</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6c0a6cbf-6339-4fa7-9997-3061db6c3670</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

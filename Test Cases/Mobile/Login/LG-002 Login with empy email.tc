@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LG-002 Login with empy email</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>df331ee2-3060-4e0e-b252-9ab1bf50cf7b</testCaseGuid>
+</TestCaseEntity>

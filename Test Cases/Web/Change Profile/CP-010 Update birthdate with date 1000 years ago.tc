@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CP-010 Update birthdate with date 1000 years ago</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d6b43b9c-cbc7-429f-a112-4c9d90994613</testCaseGuid>
+</TestCaseEntity>

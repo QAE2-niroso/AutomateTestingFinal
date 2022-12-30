@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test is multiple testcase for data binding (data driven)</description>
+   <name>LG-DD - All Data driven to testcase</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e24d5f87-6571-4ae5-bdd8-62b1fed14fef</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>a43bae30-2e09-453b-8a29-eaae4ea0ee15</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/Raw Data/API/Login/LogData</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bbdd7c2f-b32b-4f67-8c63-90d8f88ae363</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6aad1327-3f55-4e17-93a1-7bed35e0981d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bbdd7c2f-b32b-4f67-8c63-90d8f88ae363</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6aad1327-3f55-4e17-93a1-7bed35e0981d</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

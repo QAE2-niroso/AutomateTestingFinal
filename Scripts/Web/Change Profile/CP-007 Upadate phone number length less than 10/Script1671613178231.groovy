@@ -26,6 +26,10 @@ WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), '089563145
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
 
 WebUI.verifyTextPresent('The whatsapp must be between 10 and 12 digits.', false)
+def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'class')
+print(attr)
+
+WebUI.verifyEqual(attr.contains("is-invalid"), true)
 
 WebUI.closeBrowser()
 
