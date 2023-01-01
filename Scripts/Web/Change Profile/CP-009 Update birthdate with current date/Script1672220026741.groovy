@@ -26,20 +26,21 @@ String todaysDate = today.format('dd-MM-yyyy')
 print(todaysDate)
 
 WebUI.setText(findTestObject('Web/EditProfile/input_BirthDay_birth_date'), todaysDate)
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-009/1.png')
+WebUI.takeScreenshotAsCheckpoint('1. Setel input birth_date dengan tanggal sekarang')
 
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-009/2.png')
+WebUI.takeScreenshotAsCheckpoint('2. tap tombol Save C')
+
 WebUI.verifyTextPresent('Berhasil', false)
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-009/3.png')
+WebUI.takeScreenshotAsCheckpoint('3. validasi pesan sukses')
+
 WebUI.click(findTestObject('Web/Dashboard-MyProfile/button_OK'))
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-009/4.png')
+WebUI.takeScreenshotAsCheckpoint('4. tap tombol OK ')
 def birth_hasil = WebUI.getText(findTestObject('Web/Dashboard-MyProfile/p_birth_date'))
 
-print(birth_hasil)
 
 WebUI.verifyEqual(birth_hasil, '31-Dec-2015')
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-009/5.png')
+WebUI.takeScreenshotAsCheckpoint('5. validasi di halaman myProfile')
 WebUI.closeBrowser()
 

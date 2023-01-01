@@ -19,16 +19,15 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), '0123456789123')
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-008/1.png')
+WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), '-8945612354')
+WebUI.takeScreenshotAsCheckpoint('1. isi Phone dengan value {notelp}')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-008/2.png')
+WebUI.takeScreenshotAsCheckpoint('2. tap button "Save Changes"')
 
-
+//Harusnya message error selainn ini =
 WebUI.verifyTextPresent('The whatsapp must be between 10 and 12 digits.', false)
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-008/3.png')
-
+WebUI.takeScreenshotAsCheckpoint('3. validasi pesan error')
 def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'class')
 
 print(attr)

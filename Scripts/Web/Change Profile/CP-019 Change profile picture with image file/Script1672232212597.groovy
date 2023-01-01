@@ -23,13 +23,17 @@ def file = RunConfiguration.getProjectDir() + '/Data Files/cowo.png'
 WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.uploadFile(findTestObject('Web/EditProfile/input_changePhoto'), file)
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-019/1.png')
+WebUI.takeScreenshotAsCheckpoint('1. tap icon kamera untuk melakukan upload file \n 2. pilih file yang ingin diupload')
+
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-019/2.png')
+WebUI.takeScreenshotAsCheckpoint('3. tap button "Save Changes"')
 
 WebUI.verifyTextPresent('telah di edit', false)
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-019/3.png')
-
 WebUI.verifyTextPresent('Berhasil', false)
+WebUI.takeScreenshotAsCheckpoint('4. verifikasi pesan perubahan di halaman My Profile')
+
+WebUI.click(findTestObject('Web/Dashboard-MyProfile/button_OK'))
+WebUI.takeScreenshotAsCheckpoint('5. Tap tombol "oke" di modal Sukses Edit')
+
 
 

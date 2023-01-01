@@ -20,22 +20,25 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementPresent(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 3)
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-016/1.png')
+
 
 WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), phone)
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-016/2.png')
+WebUI.takeScreenshotAsCheckpoint('1. ganti phone number dengan value {phone}')
+
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-016/3.png')
+WebUI.takeScreenshotAsCheckpoint('2. tap button "Save Changes"')
+
 WebUI.verifyTextPresent('Berhasil', false)
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-016/4.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/ChangeProfile/CP-016/4.png')
 
 WebUI.click(findTestObject('Web/Dashboard-MyProfile/button_OK'))
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-016/5.png')
+WebUI.takeScreenshotAsCheckpoint('3. Tap tombol "oke" di modal Sukses Edit')
+
 
 def text = WebUI.getText(findTestObject('Web/Dashboard-MyProfile/p_phoneNumber'))
 WebUI.verifyEqual(text, phone)
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-016/6.png')
+WebUI.takeScreenshotAsCheckpoint('4. verifikasi perubahan nomor telepon di halaman My Profile')
 
 WebUI.closeBrowser()
 

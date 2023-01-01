@@ -20,16 +20,18 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.clearText(findTestObject('Web/EditProfile/input_Fullname_name'), FailureHandling.STOP_ON_FAILURE)
-WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/ChangeProfile/CP-003/1.png')
+WebUI.takeScreenshotAsCheckpoint('1. Kosongkan field fullname')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/ChangeProfile/CP-003/2.png')
+WebUI.takeScreenshotAsCheckpoint('2. tap button "Save Changes"')
+
 WebUI.verifyTextPresent('The name field is required.', false)
-WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/ChangeProfile/CP-003/3.png')
+WebUI.takeScreenshotAsCheckpoint('Muncul pesan error')
+
 def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Fullname_name'), 'class')
 print(attr)
 
 WebUI.verifyEqual(attr.contains('is-invalid'), true)
-WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/ChangeProfile/CP-003/4.png')
+WebUI.takeScreenshotAsCheckpoint('Muncul tampilan error pada input')
 WebUI.closeBrowser()
 

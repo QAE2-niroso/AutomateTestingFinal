@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>XCP-012 Force update email field</name>
+   <name>CP-005 Update phone number with Alphabet</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>28f4bf7a-8d78-42a1-a658-7adc4c31afb1</testCaseGuid>
+   <testCaseGuid>ae0277a6-f4bd-4c8e-9442-77cbb0899bdd</testCaseGuid>
 </TestCaseEntity>

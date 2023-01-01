@@ -19,18 +19,21 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
-
-def el=WebUI.removeObjectProperty(findTestObject('Web/EditProfile/input_Email_email'), 'disabled')
-WebUI.setText(el,"demo@gmail.com")
+WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), '0123456789123')
+WebUI.takeScreenshotAsCheckpoint('1. Setel input WA dengan {phone}')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
+WebUI.takeScreenshotAsCheckpoint('2. tap tombol Save Change')
 
-WebUI.click(findTestObject('Web/Dashboard-MyProfile/button_OK'))
 
-def text = WebUI.getText(findTestObject('Web/Dashboard-MyProfile/p_email'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyTextPresent('The whatsapp must be between 10 and 12 digits.', false)
+WebUI.takeScreenshotAsCheckpoint('3. validasi pesan error')
 
-WebUI.verifyNotMatch('demo@gmail.com', text, false)
+def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'class')
+
+print(attr)
+
+WebUI.verifyEqual(attr.contains('is-invalid'), true)
 
 WebUI.closeBrowser()
 

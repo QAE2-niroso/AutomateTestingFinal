@@ -5,6 +5,12 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>a3ef0124-8fdc-4c95-9443-9582c2d30164</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>098e34b6-dc75-4161-b8eb-a09238d7cb65</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'Ol\' Reliable'</defaultValue>
       <description></description>

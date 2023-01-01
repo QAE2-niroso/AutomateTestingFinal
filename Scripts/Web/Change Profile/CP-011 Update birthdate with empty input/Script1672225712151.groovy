@@ -20,17 +20,17 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.clearText(findTestObject('Web/EditProfile/input_BirthDay_birth_date'), FailureHandling.STOP_ON_FAILURE)
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-011/1.png')
+WebUI.takeScreenshotAsCheckpoint('1. Kosongkan field birthdate ')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-011/2.png')
+WebUI.takeScreenshotAsCheckpoint('2. click save Chage')
 
 def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_BirthDay_birth_date'), 'class')
 
 print(attr)
 
 WebUI.verifyEqual(attr.contains('is-invalid'), true)
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-011/3.png')
+WebUI.takeScreenshotAsCheckpoint('3. validasi pesan error')
 
 WebUI.closeBrowser()
 

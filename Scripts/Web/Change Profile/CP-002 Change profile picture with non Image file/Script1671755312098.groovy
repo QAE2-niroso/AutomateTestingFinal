@@ -23,11 +23,11 @@ def file = RunConfiguration.getProjectDir() + '/Data Files/upload.docx'
 WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.uploadFile(findTestObject('Web/EditProfile/input_changePhoto'), file)
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-002/1.png')
+WebUI.takeScreenshotAsCheckpoint('1. tap button dengan logo kamera \n 2. pilih file dengan ekstensi non-image (word, pdf ,dll)')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-002/2.png')
+WebUI.takeScreenshotAsCheckpointAsCheckpoint('3. tap btn "Save Changes"')
 
 WebUI.verifyTextPresent('file must be Image', false)
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-002/3.png')
+WebUI.takeScreenshotAsCheckpoint('Muncul pesan error')
 

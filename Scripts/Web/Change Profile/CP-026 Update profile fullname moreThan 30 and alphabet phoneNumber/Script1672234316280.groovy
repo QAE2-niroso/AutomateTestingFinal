@@ -20,18 +20,18 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Web/EditProfile/input_Fullname_name'), 'uvuvwevwevwe onyetenyevwe ugwemuhwem osas')
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-026/1.png')
+WebUI.takeScreenshotAsCheckpoint('1. isi field fullname dengan value {fullname}')
 
 WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'huruf')
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-026/2.png')
-
+WebUI.takeScreenshotAsCheckpoint('2. isi field phone dengan value {phone} ')
 
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-026/3.png')
+WebUI.takeScreenshotAsCheckpoint('3. tap button "Save Changes" ')
 
 WebUI.verifyTextPresent('The name may not be greater than 30 characters.', false)
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-026/4.png')
+WebUI.takeScreenshotAsCheckpoint('4. validate pesan error')
+
 def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Fullname_name'), 'class')
 
 print(attr)
@@ -41,7 +41,7 @@ WebUI.verifyEqual(attr.contains('is-invalid'), true)
 WebUI.comment('')
 
 WebUI.verifyTextPresent('The whatsapp must be a number.', false)
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-026/5.png')
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/ChangeProfile/CP-026/5.png')
 attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'class')
 
 print(attr)

@@ -20,21 +20,22 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Web/EditProfile/input_BirthDay_birth_date'), '21-Apr-2000')
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-018/1.png')
+WebUI.takeScreenshotAsCheckpoint('1. ganti birth_date dengan value {date}')
 
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-018/1.png')
+WebUI.takeScreenshotAsCheckpoint('2. tap button "Save Changes"')
 
 WebUI.verifyTextPresent('Berhasil', false)
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-018/3.png')
+
 WebUI.click(findTestObject('Web/Dashboard-MyProfile/button_OK'))
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-018/4.png')
+WebUI.takeScreenshotAsCheckpoint('3. Tap tombol "oke" di modal Sukses Edit')
 def birth_hasil = WebUI.getText(findTestObject('Web/Dashboard-MyProfile/p_birth_date'))
+
+WebUI.takeScreenshotAsCheckpoint('4. verifikasi perubahan birth_date di halaman My Profile')
 
 print(birth_hasil)
 
 WebUI.verifyEqual(birth_hasil, '21-Apr-2000')
-WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-018/5.png')
 WebUI.closeBrowser()
 

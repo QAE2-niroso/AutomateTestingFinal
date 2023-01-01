@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>CP-007 Upadate phone number length less than 10</name>
+   <name>CP-006 Update phone number with value negative</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>cd7acac5-a4c7-4edd-9392-9625b2c5ccae</testCaseGuid>
+   <testCaseGuid>71c4e89e-cfdb-47b5-baf0-3a9878313433</testCaseGuid>
 </TestCaseEntity>
