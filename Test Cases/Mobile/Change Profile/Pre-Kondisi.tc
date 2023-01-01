@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>PF-test</name>
+   <name>Pre-Kondisi</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>70a0e214-3d0d-490e-a38d-f37c65ee5308</testCaseGuid>
+   <testCaseGuid>86f4ff03-4900-4772-8423-6073eb557193</testCaseGuid>
 </TestCaseEntity>
