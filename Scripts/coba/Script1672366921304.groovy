@@ -17,5 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('https://demo-app.online/login')
 
+WebUI.click(findTestObject('Web/Login/button_Login'))
+
+WebUI.verifyElementAttributeValue(findTestObject('Web/Login/input_Email_email'), 'validationMessage', 'Please fill out this field.', 
+    0)
 

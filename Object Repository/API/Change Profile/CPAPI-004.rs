@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>CPAPI-017</name>
+   <name>CPAPI-004</name>
    <tag></tag>
-   <elementGuidId>56defd3d-8738-4730-ace7-c4d36d15fca9</elementGuidId>
+   <elementGuidId>b9a625d5-3f3d-4cc6-b64a-dfeeb704a624</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
       <authorizationInfo>
          <entry>
             <key>bearerToken</key>
-            <value>eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiN2U0MDFlMzJmNTFlN2JlODg0OTU5MTQ1YjdmNTdhMDNiYzU2OGFkY2M4NWRhNTk3YzlhMmNmY2E3M2I3MTc4ZDA0MWMxMmMwZjczYzVhYjkiLCJpYXQiOjE2NzIxMzMyOTMuNDY0ODc1LCJuYmYiOjE2NzIxMzMyOTMuNDY0ODc3LCJleHAiOjE3MDM2NjkyOTMuNDYyNDY0LCJzdWIiOiIxMTUiLCJzY29wZXMiOltdfQ.Yd9NjPKOk8qpZyyJhZZz_f0iesr9FT3Frcy9-0vDchu_6cefgGu9JLUoedflneuPYdZoAiaITfOXExaoLGfp054oS7bVZnPH_2QLIYQdZ9Kl4_rlvlW2IKsKZEqOQO2_QIvIdX3VMe8t0ruCYg8OWWK0HuJ1PlGi84vnEM4ZpSxy3glS9FSid2PAUfXzHMQ2Weqp5gaEX9aMd6av0uqBAXFOYldMMQHyNl2e7W5gxK_ntpKULbSmkhQWNTsbink1uSD9EFEBYHYKEN3MQBqWReALb-4vu2ZKPr_aA_bNKosZRMStR7CrqUZGA6Y1_tj4kzHoYqLJoDnJqszXmVTWG0PSQhIV-pjqaZoP1hmH-pHq9iSrHPkBMYz9gIlib1Gcq7nlKOWIKyT0gblR5TcLCpYDkqGy4_u72S2SyWnHo53p_lO6UUed3hNpyvTV4clp14_C61FipH1OawkZCtAEsWL1mfQRJeaOr3nDvEKJQCl6ugm1gn-4kO-4fdIRYfEmyMoki-R-YfUdBZBp3LIRBZ31kkhsmd3vlYFQ4f6LKsOEbiMLGDIaQo_00Og_p8k4p09Ujag54HrtWXYrvGelTCKqb_PLZYq1OZ1Gi5mOTR5Phyl4PxXgy1JfLuRtmRbEpOsmN_RSwmkAl08cnhquwqIFfg0l4-CGjyGs6LnqgoU</value>
+            <value>eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiYTNmNGUwNjM5N2ZlYzYxMzA1MzQxZGZiMzY2NTA5NDg4NTc3YmFmZGFlNTgxMzY3YWY4OTMyNWY1MDRmZTYwMmIyODUzNjA4MTBlYmNlZmYiLCJpYXQiOjE2NzIwNzA2OTMuMjYyMTYsIm5iZiI6MTY3MjA3MDY5My4yNjIxNjMsImV4cCI6MTcwMzYwNjY5My4yNjA2OTcsInN1YiI6IjEwNiIsInNjb3BlcyI6W119.c52XdNsxv2o9_w2ok491dHXVbnvRNac3d1kedpkPcUD1UxaVbPDX5b2e97pDPGG5Vf2CXNFrgqH6Q91yJXIKPDWxISBg3w8zP8PlMu-mLieRcnBLDNMAOo7k0XAGRc1YyhILkdyCfmKv_dqRAnm6g6ccsFZEIEMfjjAmLUnF4oqEUtXriTdN_kMiVV3nggPmGAiF4Hdrf2TQJpwQzQlLFXgh3B3MXe96WDhymafuVdAj7HtFyWoHzIdiaDWPBlG6pjddMI-oOmbDqr5UMSPIsBbuZ3juWPKNJ09wOUmox0Aiwgv9ChFBpH4wfCKi4Lz0rgrmKldNf1D9lVrCIUZ8NZa16rc7ySMhL25aEUxKd2DmbVPI9_tcP_g9HpMwm-dPhw3pMFOk4a63bfwOqiHl4kz9HJE38GViFkuBgNnRsPRJ-ZA2c0PrrPA16a3SLSvng7nmQFpogb-xotPLif3LSsHjXjJw2beWUW7-NWd6YdVMtW4fdPZ0C4hU2RVEpmRN1ZI-9NoUrdlSQhdvQNENWZ8sKoMMkRathYGWTOyMf-9cwK80Sb-Wzu0-qwR-YrJkv9U1uQ59SsZmCEk2AFdVkONO9W-gpsvcUq1MlkBepoXauXW7jrueAY9VeSxxZZQlKHjhQSfALmxmASD97xtxUb16ieMV8wBoe7MtjzneGHU</value>
          </entry>
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
@@ -23,8 +23,8 @@
   &quot;charset&quot;: &quot;UTF-8&quot;,
   &quot;parameters&quot;: [
     {
-      &quot;name&quot;: &quot;whatsapp&quot;,
-      &quot;value&quot;: &quot;&quot;,
+      &quot;name&quot;: &quot;names&quot;,
+      &quot;value&quot;: &quot; CPAPI-012&quot;,
       &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     }
@@ -44,8 +44,8 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiN2U0MDFlMzJmNTFlN2JlODg0OTU5MTQ1YjdmNTdhMDNiYzU2OGFkY2M4NWRhNTk3YzlhMmNmY2E3M2I3MTc4ZDA0MWMxMmMwZjczYzVhYjkiLCJpYXQiOjE2NzIxMzMyOTMuNDY0ODc1LCJuYmYiOjE2NzIxMzMyOTMuNDY0ODc3LCJleHAiOjE3MDM2NjkyOTMuNDYyNDY0LCJzdWIiOiIxMTUiLCJzY29wZXMiOltdfQ.Yd9NjPKOk8qpZyyJhZZz_f0iesr9FT3Frcy9-0vDchu_6cefgGu9JLUoedflneuPYdZoAiaITfOXExaoLGfp054oS7bVZnPH_2QLIYQdZ9Kl4_rlvlW2IKsKZEqOQO2_QIvIdX3VMe8t0ruCYg8OWWK0HuJ1PlGi84vnEM4ZpSxy3glS9FSid2PAUfXzHMQ2Weqp5gaEX9aMd6av0uqBAXFOYldMMQHyNl2e7W5gxK_ntpKULbSmkhQWNTsbink1uSD9EFEBYHYKEN3MQBqWReALb-4vu2ZKPr_aA_bNKosZRMStR7CrqUZGA6Y1_tj4kzHoYqLJoDnJqszXmVTWG0PSQhIV-pjqaZoP1hmH-pHq9iSrHPkBMYz9gIlib1Gcq7nlKOWIKyT0gblR5TcLCpYDkqGy4_u72S2SyWnHo53p_lO6UUed3hNpyvTV4clp14_C61FipH1OawkZCtAEsWL1mfQRJeaOr3nDvEKJQCl6ugm1gn-4kO-4fdIRYfEmyMoki-R-YfUdBZBp3LIRBZ31kkhsmd3vlYFQ4f6LKsOEbiMLGDIaQo_00Og_p8k4p09Ujag54HrtWXYrvGelTCKqb_PLZYq1OZ1Gi5mOTR5Phyl4PxXgy1JfLuRtmRbEpOsmN_RSwmkAl08cnhquwqIFfg0l4-CGjyGs6LnqgoU</value>
-      <webElementGuid>6f837a38-c546-444a-a678-a7368bf89cfc</webElementGuid>
+      <value>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiYTNmNGUwNjM5N2ZlYzYxMzA1MzQxZGZiMzY2NTA5NDg4NTc3YmFmZGFlNTgxMzY3YWY4OTMyNWY1MDRmZTYwMmIyODUzNjA4MTBlYmNlZmYiLCJpYXQiOjE2NzIwNzA2OTMuMjYyMTYsIm5iZiI6MTY3MjA3MDY5My4yNjIxNjMsImV4cCI6MTcwMzYwNjY5My4yNjA2OTcsInN1YiI6IjEwNiIsInNjb3BlcyI6W119.c52XdNsxv2o9_w2ok491dHXVbnvRNac3d1kedpkPcUD1UxaVbPDX5b2e97pDPGG5Vf2CXNFrgqH6Q91yJXIKPDWxISBg3w8zP8PlMu-mLieRcnBLDNMAOo7k0XAGRc1YyhILkdyCfmKv_dqRAnm6g6ccsFZEIEMfjjAmLUnF4oqEUtXriTdN_kMiVV3nggPmGAiF4Hdrf2TQJpwQzQlLFXgh3B3MXe96WDhymafuVdAj7HtFyWoHzIdiaDWPBlG6pjddMI-oOmbDqr5UMSPIsBbuZ3juWPKNJ09wOUmox0Aiwgv9ChFBpH4wfCKi4Lz0rgrmKldNf1D9lVrCIUZ8NZa16rc7ySMhL25aEUxKd2DmbVPI9_tcP_g9HpMwm-dPhw3pMFOk4a63bfwOqiHl4kz9HJE38GViFkuBgNnRsPRJ-ZA2c0PrrPA16a3SLSvng7nmQFpogb-xotPLif3LSsHjXjJw2beWUW7-NWd6YdVMtW4fdPZ0C4hU2RVEpmRN1ZI-9NoUrdlSQhdvQNENWZ8sKoMMkRathYGWTOyMf-9cwK80Sb-Wzu0-qwR-YrJkv9U1uQ59SsZmCEk2AFdVkONO9W-gpsvcUq1MlkBepoXauXW7jrueAY9VeSxxZZQlKHjhQSfALmxmASD97xtxUb16ieMV8wBoe7MtjzneGHU</value>
+      <webElementGuid>954f550e-7abd-492f-a4b0-3a2de8497a27</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.2</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
@@ -73,7 +73,6 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-
-print(token)</verificationScript>
+assertThat(response.getStatusCode()).isEqualTo(200)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

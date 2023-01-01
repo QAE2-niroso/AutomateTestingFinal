@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>CPAPI-022</name>
+   <name>setValidDateProfile</name>
    <tag></tag>
-   <elementGuidId>2bac18e5-1ffa-4943-96ba-5795aacdc565</elementGuidId>
+   <elementGuidId>de15f88b-cf8a-4aa6-8f93-a5c21a81d6bf</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
       <authorizationInfo>
          <entry>
             <key>bearerToken</key>
-            <value>eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiN2U0MDFlMzJmNTFlN2JlODg0OTU5MTQ1YjdmNTdhMDNiYzU2OGFkY2M4NWRhNTk3YzlhMmNmY2E3M2I3MTc4ZDA0MWMxMmMwZjczYzVhYjkiLCJpYXQiOjE2NzIxMzMyOTMuNDY0ODc1LCJuYmYiOjE2NzIxMzMyOTMuNDY0ODc3LCJleHAiOjE3MDM2NjkyOTMuNDYyNDY0LCJzdWIiOiIxMTUiLCJzY29wZXMiOltdfQ.Yd9NjPKOk8qpZyyJhZZz_f0iesr9FT3Frcy9-0vDchu_6cefgGu9JLUoedflneuPYdZoAiaITfOXExaoLGfp054oS7bVZnPH_2QLIYQdZ9Kl4_rlvlW2IKsKZEqOQO2_QIvIdX3VMe8t0ruCYg8OWWK0HuJ1PlGi84vnEM4ZpSxy3glS9FSid2PAUfXzHMQ2Weqp5gaEX9aMd6av0uqBAXFOYldMMQHyNl2e7W5gxK_ntpKULbSmkhQWNTsbink1uSD9EFEBYHYKEN3MQBqWReALb-4vu2ZKPr_aA_bNKosZRMStR7CrqUZGA6Y1_tj4kzHoYqLJoDnJqszXmVTWG0PSQhIV-pjqaZoP1hmH-pHq9iSrHPkBMYz9gIlib1Gcq7nlKOWIKyT0gblR5TcLCpYDkqGy4_u72S2SyWnHo53p_lO6UUed3hNpyvTV4clp14_C61FipH1OawkZCtAEsWL1mfQRJeaOr3nDvEKJQCl6ugm1gn-4kO-4fdIRYfEmyMoki-R-YfUdBZBp3LIRBZ31kkhsmd3vlYFQ4f6LKsOEbiMLGDIaQo_00Og_p8k4p09Ujag54HrtWXYrvGelTCKqb_PLZYq1OZ1Gi5mOTR5Phyl4PxXgy1JfLuRtmRbEpOsmN_RSwmkAl08cnhquwqIFfg0l4-CGjyGs6LnqgoU</value>
+            <value>eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiOTNkODg0NTI0NDQ0N2VkZWZlOWZiZTM2MmUwNGY0YmU0M2EyM2YzOTM5YjIyMmE2OWE5YTJjNDAwNDY4NTZlNTNiMmFjYjYzMjQ1Mjg2ZjgiLCJpYXQiOjE2NzIxMzI1NzEuOTYyOTg5LCJuYmYiOjE2NzIxMzI1NzEuOTYyOTkzLCJleHAiOjE3MDM2Njg1NzEuOTU2Nzk3LCJzdWIiOiIxMTUiLCJzY29wZXMiOltdfQ.OMkLvDEw8yD6t0-YRiewMRG2jbq7Fs8WeyYDqo61o9B1riSOOtT1dpFc1HCnp78NRWQM2euWWmn_R_tG-vIdFVaFEMQ_LNH-8u4HMKe2d_uSVBqTELY0Ih0ZGxM5u3D7Tev58VlgYvtxHCQMd7r4mUilH56qNVLIjv63Vwg6zzubzMAv4rPe0id0NqTDW4JI1BIEGWcOIAtRfPXLwuED9YwiyyYSzUJ-sIzuUSuJqsOg5jUblSIpeiAdCBWWQX8MmHweESQCtXroWAZ-NUWjBCJCzYdCaokz2W-yWY_CqoIff4W7qX-ijBiD53C_afLIAhr-dsyYUCqG3etRpiSzCEuQiIMjRtBq8UaHqLNl-KXMPq_Cp6yivuGmiNOOwmpnhKE2GTnxuCGVj9zToL5-WsBXauSBfeqzH2aIjcbcCZQZdJhGNrkCIEKAPu8Q989UXsee8xPgVpODS3dm_xCiSHox0ZWIomThNYTXMMALy2JUXOoTZcvNEnFMPIahDXS3ZAPPgXZElYD1RwID1_kwP6fJ-l0s6Hc_LYPt6koZ1DxS7VKeRTfh3BfE7uw32B9E1PFEo83N0AkdMiD1UYnkdW_zJuSGkhQznPp0aoaa1y-dmzP3nUVjpFC9FYWkPSK2UJ7N6TvpgZInBPvaqSy1wRpS-CbZqXcMjEotIWLlYPI</value>
          </entry>
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
@@ -23,8 +23,8 @@
   &quot;charset&quot;: &quot;UTF-8&quot;,
   &quot;parameters&quot;: [
     {
-      &quot;name&quot;: &quot;photo&quot;,
-      &quot;value&quot;: &quot;D:\\CodingID\\Level2\\Screenshot Testing Result\\Login Mobile\\LG-016\\1.png&quot;,
+      &quot;name&quot;: &quot;birth_date&quot;,
+      &quot;value&quot;: &quot;2000-01-01&quot;,
       &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     }
@@ -44,8 +44,8 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiN2U0MDFlMzJmNTFlN2JlODg0OTU5MTQ1YjdmNTdhMDNiYzU2OGFkY2M4NWRhNTk3YzlhMmNmY2E3M2I3MTc4ZDA0MWMxMmMwZjczYzVhYjkiLCJpYXQiOjE2NzIxMzMyOTMuNDY0ODc1LCJuYmYiOjE2NzIxMzMyOTMuNDY0ODc3LCJleHAiOjE3MDM2NjkyOTMuNDYyNDY0LCJzdWIiOiIxMTUiLCJzY29wZXMiOltdfQ.Yd9NjPKOk8qpZyyJhZZz_f0iesr9FT3Frcy9-0vDchu_6cefgGu9JLUoedflneuPYdZoAiaITfOXExaoLGfp054oS7bVZnPH_2QLIYQdZ9Kl4_rlvlW2IKsKZEqOQO2_QIvIdX3VMe8t0ruCYg8OWWK0HuJ1PlGi84vnEM4ZpSxy3glS9FSid2PAUfXzHMQ2Weqp5gaEX9aMd6av0uqBAXFOYldMMQHyNl2e7W5gxK_ntpKULbSmkhQWNTsbink1uSD9EFEBYHYKEN3MQBqWReALb-4vu2ZKPr_aA_bNKosZRMStR7CrqUZGA6Y1_tj4kzHoYqLJoDnJqszXmVTWG0PSQhIV-pjqaZoP1hmH-pHq9iSrHPkBMYz9gIlib1Gcq7nlKOWIKyT0gblR5TcLCpYDkqGy4_u72S2SyWnHo53p_lO6UUed3hNpyvTV4clp14_C61FipH1OawkZCtAEsWL1mfQRJeaOr3nDvEKJQCl6ugm1gn-4kO-4fdIRYfEmyMoki-R-YfUdBZBp3LIRBZ31kkhsmd3vlYFQ4f6LKsOEbiMLGDIaQo_00Og_p8k4p09Ujag54HrtWXYrvGelTCKqb_PLZYq1OZ1Gi5mOTR5Phyl4PxXgy1JfLuRtmRbEpOsmN_RSwmkAl08cnhquwqIFfg0l4-CGjyGs6LnqgoU</value>
-      <webElementGuid>d72f7bd6-028c-42e5-8302-ef50b3bb597c</webElementGuid>
+      <value>Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiOWQ1YzIzNDVlNTYwZmIwMmMwMjJjODg1MTc1NTg5ZGJjMzRjM2RmZjliOWEyMzZmOThkZDlkNWRkZGYyNjM0NzhiYzJlODU0NDRkNzcwNjkiLCJpYXQiOjE2NzIxMzI0ODYuMjg2MTQ5LCJuYmYiOjE2NzIxMzI0ODYuMjg2MTUxLCJleHAiOjE3MDM2Njg0ODYuMjg0MzE2LCJzdWIiOiIxMTUiLCJzY29wZXMiOltdfQ.fNsknX_pnpDBzkVXRdo6-tR8QQQy_oDUCGAJ4KWb2bTpZBOZkB5SbMeZy74DlMH0zm33tQADEldMf81lE2sXtxCon98ujksqy7SLpZAmUb1S-AhyPyY5KqBbg7RdWDtmVOlrrV3FROY5q7gpOmdFTAe8yxvPxUSly3YltChmNRirtjA_ChvMUWRSD1y6cmgmrnri--bk7mMgVVFDnWZNr7eUfu-WsY_Rr_HFpYT_DKDXnb_Dv5OCXmaxKrp5uhMgrKtp1iWsKjg2cuwsFngbVqJw-8QGQTqwmw12YxHNL0hfyMW6oqA_AM796Wm7y9OHP1CP7k0eiq0aG3dCA8bA-hxFoYuCs1lllMRwJt-GHCCxRmDOfAIabfaLZ4F0PUgj4ldUNisguupj_hAFXU4yhQMWHQiIxLe0zQM4GFqsWGBydNnRB51HYuFdotsvMB7y1CV_QNlDtRsSPM2IAuD_5HDHTq8EruxJB4y0wq8U2mQjEr1q0ndbeZDoBnLRho9Sq6OvWNOoGcknVg0SKA8GXA_fb-tny5OD2e_ZHWXknecGOyrjTUZKVDZ8mXOMUjM1t7Mzmgoya_DV_wyGK7pKtYoDDSERkpYDLgFNSyAwwA4ZMDlVgsw4jgj-1LjkELBgYOzb93KbFYv_qvQH23SzANeHm2nSCHG8MzuYTM9FozY</value>
+      <webElementGuid>c24e5b60-61e9-4889-99b0-199db557c526</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.2</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
@@ -74,6 +74,7 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-print(token)</verificationScript>
+print(token)
+assertThat(response.getStatusCode()).isEqualTo(401)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

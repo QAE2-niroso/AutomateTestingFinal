@@ -17,9 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WS.sendRequestAndVerify(findTestObject('API/Change Profile/CPAPI-009'))
+WS.sendRequestAndVerify(findTestObject('API/Change Profile/CPAPI-001'))
 
-response WS.sendRequest(findTestObject('API/Change Profile/Login'))
-
-id = WS.getElementPropertyValue(response, 'bookingid')
+response = WS.sendRequest(findTestObject('API/Change Profile/Login'))
+WS.verifyElementPropertyValue(response, 'bookingid', null)
 

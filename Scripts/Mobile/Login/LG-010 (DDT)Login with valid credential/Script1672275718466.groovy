@@ -25,7 +25,7 @@ Mobile.tap(findTestObject('Mobile/Beranda/navBeranda'), 1)
 
 Mobile.tap(findTestObject('Mobile/Login/Login Here'), 1)
 
-Mobile.setText(findTestObject('Mobile/Login/inputEmail'), 'yosuhadwi@gmail.com', 0)
+Mobile.setText(findTestObject('Mobile/Login/inputEmail'), 'yoshuadwi@gmail.com', 0)
 
 Mobile.setText(findTestObject('Mobile/Login/inputPassword'), 'yoshuadwi06', 0)
 

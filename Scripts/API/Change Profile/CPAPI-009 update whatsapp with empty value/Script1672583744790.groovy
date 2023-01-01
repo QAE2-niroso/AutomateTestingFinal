@@ -17,5 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WS.sendRequestAndVerify(findTestObject('API/Change Profile/CPAPI-017'))
+response = WS.sendRequest(findTestObject('API/Change Profile/Login'))
+wa = WS.getElementPropertyValue(response, 'success.whatsapp')
+print(wa)
+WS.sendRequestAndVerify(findTestObject('API/Change Profile/CPAPI-009'), FailureHandling.CONTINUE_ON_FAILURE)
 
+response = WS.sendRequest(findTestObject('API/Change Profile/Login'))
+WS.verifyElementPropertyValue(response, 'success.whatsapp', wa)
