@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>1abdfaf3-5f8b-40f8-b1ad-b3e05534f2ff</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>673ea6cb-66b8-482f-b8c4-4cc3973ec94c</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'098765431212'</defaultValue>
+      <description></description>
+      <id>673ea6cb-66b8-482f-b8c4-4cc3973ec94c</id>
+      <masked>false</masked>
+      <name>phone</name>
+   </variable>
 </TestCaseEntity>

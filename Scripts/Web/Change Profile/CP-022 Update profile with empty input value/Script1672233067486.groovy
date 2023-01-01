@@ -19,33 +19,37 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
-
 WebUI.clearText(findTestObject('Web/EditProfile/input_Fullname_name'), FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-022/1.png')
+
 
 WebUI.clearText(findTestObject('Web/EditProfile/input_Phone_whatsapp'))
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-022/2.png')
 
 WebUI.clearText(findTestObject('Web/EditProfile/input_BirthDay_birth_date'))
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-022/3.png')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-022/4.png')
 
 WebUI.verifyTextPresent('The name field is required.', false)
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-022/5.png')
 
 def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Fullname_name'), 'class')
 
 print(attr)
 
 WebUI.verifyEqual(attr.contains('is-invalid'), true)
-
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-022/6.png')
 WebUI.comment('')
 
 WebUI.verifyTextPresent('The whatsapp field is required.', false)
-
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-022/7.png')
 attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'class')
 
 print(attr)
 
 WebUI.verifyEqual(attr.contains('is-invalid'), true)
-
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-022/8.png')
 WebUI.closeBrowser()
 

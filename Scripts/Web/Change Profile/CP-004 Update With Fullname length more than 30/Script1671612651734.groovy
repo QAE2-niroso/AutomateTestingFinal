@@ -19,17 +19,18 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
-
 WebUI.setText(findTestObject('Web/EditProfile/input_Fullname_name'), 'Uvuwvwevwevwev Onyetemevew Ugweugwem Osas')
-
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-004/1.png')
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-004/2.png')
 
 WebUI.verifyTextPresent('The name may not be greater than 30 characters.', false)
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-004/3.png')
 def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Fullname_name'), 'class')
+
 print(attr)
 
-WebUI.verifyEqual(attr.contains("is-invalid"), true)
-
+WebUI.verifyEqual(attr.contains('is-invalid'), true)
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-004/4.png')
 WebUI.closeBrowser()
 

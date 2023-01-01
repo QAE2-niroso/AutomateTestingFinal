@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CPAPI-004 update field name with typo keys</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b57334ca-03d0-45e2-9475-38f40502e247</testCaseGuid>
+</TestCaseEntity>

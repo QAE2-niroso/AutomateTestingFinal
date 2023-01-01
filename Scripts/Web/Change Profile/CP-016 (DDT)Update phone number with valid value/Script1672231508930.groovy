@@ -19,19 +19,23 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
+WebUI.waitForElementPresent(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 3)
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-016/1.png')
 
-WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), '08976543214')
+WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), phone)
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-016/2.png')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-016/3.png')
 WebUI.verifyTextPresent('Berhasil', false)
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-016/4.png')
 
 WebUI.click(findTestObject('Web/Dashboard-MyProfile/button_OK'))
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-016/5.png')
 
 def text = WebUI.getText(findTestObject('Web/Dashboard-MyProfile/p_phoneNumber'))
-
-WebUI.verifyEqual(text, '08976543214')
+WebUI.verifyEqual(text, phone)
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-016/6.png')
 
 WebUI.closeBrowser()
 

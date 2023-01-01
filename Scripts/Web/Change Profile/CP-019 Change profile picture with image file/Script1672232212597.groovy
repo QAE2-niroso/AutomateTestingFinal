@@ -22,13 +22,14 @@ def file = RunConfiguration.getProjectDir() + '/Data Files/cowo.png'
 
 WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
-
 WebUI.uploadFile(findTestObject('Web/EditProfile/input_changePhoto'), file)
-
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-019/1.png')
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-019/2.png')
 
 WebUI.verifyTextPresent('telah di edit', false)
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-019/3.png')
 
 WebUI.verifyTextPresent('Berhasil', false)
+
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CPAPI-011 update bio with empty value</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f4b518ab-fe75-4601-a1e5-4df46cfbd866</testCaseGuid>
+</TestCaseEntity>
