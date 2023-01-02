@@ -21,9 +21,11 @@ import org.openqa.selenium.Keys as Keys
 def file = RunConfiguration.getProjectDir() + '/Data Files/demo.apk'
 Mobile.startApplication(file, true)
 
-Mobile.waitForElementPresent(findTestObject('Mobile/Beranda/navBeranda'), 0)
+Mobile.waitForElementPresent(findTestObject('Mobile/Beranda/navBeranda'), 1)
 
+Mobile.takeScreenshotAsCheckpoint('1. Menuju fragmen my course')
 Mobile.tap(findTestObject('Mobile/Beranda/navCourse'), 1)
 
-Mobile.tap(findTestObject('Mobile/Login/Login Here'), 1)
 
+Mobile.tap(findTestObject('Mobile/Login/Login Here'), 1)
+Mobile.takeScreenshotAsCheckpoint('2. tap button login here ')

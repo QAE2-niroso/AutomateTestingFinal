@@ -26,27 +26,33 @@ Mobile.waitForElementPresent(findTestObject('Mobile/Beranda/navBeranda'), 0)
 Mobile.tap(findTestObject('Mobile/Beranda/navBeranda'), 1)
 
 Mobile.tap(findTestObject('Mobile/Login/Login Here'), 1)
+Mobile.takeScreenshotAsCheckpoint('1. Menuju halaman login')
 
 Mobile.setText(findTestObject('Mobile/Login/inputEmail'), 'yoshuadwi@gmail.com', 1)
+Mobile.takeScreenshotAsCheckpoint('2. isi field email')
 
 Mobile.setText(findTestObject('Mobile/Login/inputPassword'), 'yoshuadwi06', 1)
+Mobile.takeScreenshotAsCheckpoint('3. isi field password')
 
 Mobile.tap(findTestObject('Mobile/Login/VGBtnLogin'), 1)
+Mobile.takeScreenshotAsCheckpoint('4. tap button login')
+
 
 Mobile.waitForElementPresent(findTestObject('Mobile/Beranda/navProfile'), 2)
 Mobile.tap(findTestObject('Mobile/Beranda/navProfile'), 1)
-
 email = Mobile.getText(findTestObject('Mobile/Detail_Information/Email_DetailInformation'), 1)
-
 Mobile.verifyEqual(email, 'yoshuadwi@gmail.com')
 
+Mobile.takeScreenshotAsCheckpoint('5. tutup aplikasi')
 Mobile.closeApplication()
 
 Mobile.startExistingApplication('com.codingid.codingidhive.betastaging', FailureHandling.STOP_ON_FAILURE)
+Mobile.takeScreenshotAsCheckpoint('6. Membuka kembali aplikasi')
 
 Mobile.waitForElementPresent(findTestObject('Mobile/Beranda/navProfile'), 1)
+Mobile.takeScreenshotAsCheckpoint('7. buka fragmen profile')
 
 email = Mobile.getText(findTestObject('Mobile/Detail_Information/Email_DetailInformation'), 1)
 
 Mobile.verifyEqual(email, 'yoshuadwi@gmail.com')
-
+Mobile.takeScreenshotAsCheckpoint('8. validasi kredensial')

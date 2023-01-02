@@ -22,19 +22,21 @@ def file = RunConfiguration.getProjectDir() + '/Data Files/demo.apk'
 Mobile.startApplication(file, true)
 
 
-Mobile.waitForElementPresent(findTestObject('Mobile/Beranda/navBeranda'), 0)
-
+Mobile.waitForElementPresent(findTestObject('Mobile/Beranda/navBeranda'), 1)
 Mobile.tap(findTestObject('Mobile/Beranda/navBeranda'), 1)
-
 Mobile.tap(findTestObject('Mobile/Login/Login Here'), 1)
 
 Mobile.setText(findTestObject('Mobile/Login/inputEmail'), 'yosuhadwi@gmail.comss', 0)
+Mobile.takeScreenshotAsCheckpoint('1. isi field email dengan value salah')
+
 
 Mobile.setText(findTestObject('Mobile/Login/inputPassword'), 'yoshuadwi06', 0)
+Mobile.takeScreenshotAsCheckpoint('2. isi field password')
 
 Mobile.tap(findTestObject('Mobile/Login/VGBtnLogin'), 1)
+Mobile.takeScreenshotAsCheckpoint('3. tap button login')
 
 Mobile.waitForElementPresent(findTestObject('Mobile/Login/android.widget.TextView - Invalid Credential'), 3)
 
 Mobile.verifyElementText(findTestObject('Mobile/Login/android.widget.TextView - Invalid Credential'), 'Invalid Credential')
-
+Mobile.takeScreenshotAsCheckpoint('4. verifikasi pesan error')

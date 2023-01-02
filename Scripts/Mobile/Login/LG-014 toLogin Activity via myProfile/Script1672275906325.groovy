@@ -21,9 +21,11 @@ import com.kms.katalon.core.configuration.RunConfiguration
 def file = RunConfiguration.getProjectDir() + '/Data Files/demo.apk'
 Mobile.startApplication(file, true)
 
-Mobile.waitForElementPresent(findTestObject('Mobile/Beranda/navBeranda'), 0)
+Mobile.waitForElementPresent(findTestObject('Mobile/Beranda/navBeranda'), 1)
 
+Mobile.takeScreenshotAsCheckpoint('1. Menuju fragmen Profile')
 Mobile.tap(findTestObject('Mobile/Beranda/navEvent'), 1)
 
-Mobile.tap(findTestObject('Mobile/Login/Login Here'), 1)
 
+Mobile.tap(findTestObject('Mobile/Login/Login Here'), 1)
+Mobile.takeScreenshotAsCheckpoint('2. tap button login here')

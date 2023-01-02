@@ -7,7 +7,7 @@
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
-   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <pageLoadTimeoutDefault>false</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>3d80c4a6-a152-41bb-a783-4364563957aa</testSuiteGuid>
@@ -79,17 +79,26 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Mobile/Login/LG-010 (DDT)Login with valid credential</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>671ddb74-a986-40de-bd2d-4ef7377d0421</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/InternalData/loginCred</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>671ddb74-a986-40de-bd2d-4ef7377d0421</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>email</value>
          <variableId>da91e868-45af-4e8a-88ae-b5e2db130e43</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>671ddb74-a986-40de-bd2d-4ef7377d0421</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
          <variableId>23ccf2bd-fc3f-4a56-a2da-8b4264ecffa6</variableId>
       </variableLink>
    </testCaseLink>
