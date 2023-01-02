@@ -17,7 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.codingid.codingidhive.betastaging', FailureHandling.STOP_ON_FAILURE)
+def file = RunConfiguration.getProjectDir() + '/Data Files/demo.apk'
+Mobile.startApplication(file, true)
+
 
 Mobile.waitForElementPresent(findTestObject('Mobile/Beranda/navBeranda'), 0)
 
@@ -25,9 +27,9 @@ Mobile.tap(findTestObject('Mobile/Beranda/navBeranda'), 1)
 
 Mobile.tap(findTestObject('Mobile/Login/Login Here'), 1)
 
-Mobile.setText(findTestObject('Mobile/Login/inputEmail'), 'yoshuadwi@gmail.com', 0)
+Mobile.setText(findTestObject('Mobile/Login/inputEmail'), email, 0)
 
-Mobile.setText(findTestObject('Mobile/Login/inputPassword'), 'yoshuadwi06', 0)
+Mobile.setText(findTestObject('Mobile/Login/inputPassword'), password, 0)
 
 Mobile.tap(findTestObject('Mobile/Login/VGBtnLogin'), 1)
 
@@ -35,7 +37,7 @@ Mobile.waitForElementPresent(findTestObject('Mobile/Beranda/navProfile'), 0)
 
 Mobile.tap(findTestObject('Mobile/Beranda/navProfile'), 0)
 
-def email = Mobile.getText(findTestObject('Mobile/Detail_Information/Email_DetailInformation'), 0)
+emailDetail = Mobile.getText(findTestObject('Mobile/Detail_Information/Email_DetailInformation'), 0)
 
-Mobile.verifyEqual(email, 'yoshuadwi@gmail.com')
+Mobile.verifyEqual(emailDetail, email)
 

@@ -23,7 +23,7 @@ WebUI.clearText(findTestObject('Web/EditProfile/input_Fullname_name'), FailureHa
 WebUI.takeScreenshotAsCheckpoint('1. Kosongkan field fullname')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshotAsCheckpoint('2. tap button "Save Changes"')
+WebUI.takeScreenshotAsCheckpoint('2. tap button Save Changes')
 
 WebUI.verifyTextPresent('The name field is required.', false)
 WebUI.takeScreenshotAsCheckpoint('Muncul pesan error')

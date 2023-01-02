@@ -27,7 +27,7 @@ WebUI.takeScreenshotAsCheckpoint('2. isi field phone dengan value {phone} ')
 
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshotAsCheckpoint('3. tap button "Save Changes" ')
+WebUI.takeScreenshotAsCheckpoint('3. tap button Save Changes ')
 
 WebUI.verifyTextPresent('The name may not be greater than 30 characters.', false)
 WebUI.takeScreenshotAsCheckpoint('4. validate pesan error')
@@ -41,7 +41,6 @@ WebUI.verifyEqual(attr.contains('is-invalid'), true)
 WebUI.comment('')
 
 WebUI.verifyTextPresent('The whatsapp must be a number.', false)
-WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/ChangeProfile/CP-026/5.png')
 attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'class')
 
 print(attr)

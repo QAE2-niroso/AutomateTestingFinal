@@ -29,7 +29,7 @@ WebUI.takeScreenshotAsCheckpoint('2. Kosongkan field phone ')
 WebUI.clearText(findTestObject('Web/EditProfile/input_BirthDay_birth_date'))
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshotAsCheckpoint('3. tap button "Save Changes" ')
+WebUI.takeScreenshotAsCheckpoint('3. tap button Save Changes ')
 
 WebUI.verifyTextPresent('The name field is required.', false)
 WebUI.takeScreenshotAsCheckpoint('4. Validasi pesan error')

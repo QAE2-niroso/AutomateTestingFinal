@@ -23,7 +23,7 @@ WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), '089563145
 WebUI.takeScreenshotAsCheckpoint('1. Setel WA dengan {phone}')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshotAsCheckpoint('2. tap tombol Save C')
+WebUI.takeScreenshotAsCheckpoint('2. tap tombol Save Change')
 
 WebUI.verifyTextPresent('The whatsapp must be between 10 and 12 digits.', false)
 WebUI.takeScreenshotAsCheckpoint('3. validasi pesan error')

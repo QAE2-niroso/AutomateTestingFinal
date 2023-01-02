@@ -23,7 +23,7 @@ WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'e')
 WebUI.takeScreenshotAsCheckpoint('1. isi Phone dengan value {notelp} ')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshotAsCheckpoint('2. tap button "Save Changes"')
+WebUI.takeScreenshotAsCheckpoint('2. tap button Save Changes')
 
 WebUI.verifyTextPresent('The whatsapp must be a number.', false)
 WebUI.takeScreenshotAsCheckpoint('Validasi pesan error')

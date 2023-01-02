@@ -27,7 +27,7 @@ WebUI.takeScreenshotAsCheckpoint('2. Kosongkan field phone ')
 
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshotAsCheckpoint('3. tap button "Save Changes" ')
+WebUI.takeScreenshotAsCheckpoint('3. tap button Save Changes ')
 
 WebUI.verifyTextPresent('The name may not be greater than 30 characters.', false)
 WebUI.takeScreenshotAsCheckpoint('4. validasi pesan error')

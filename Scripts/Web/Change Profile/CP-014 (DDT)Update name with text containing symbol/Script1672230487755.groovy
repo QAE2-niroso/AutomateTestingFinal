@@ -31,27 +31,9 @@ WebUI.takeScreenshotAsCheckpoint('3. validasi pesan Berhasil')
 WebUI.click(findTestObject('Web/Dashboard-MyProfile/button_OK'))
 WebUI.takeScreenshotAsCheckpoint('4. tap tombol OK')
 
-def text = WebUI.getText(findTestObject('Web/Dashboard-MyProfile/p_name'))
+ text = WebUI.getText(findTestObject('Web/Dashboard-MyProfile/p_name'))
 
 WebUI.verifyEqual(text, name)
 WebUI.takeScreenshotAsCheckpoint('5. validasi dengan text di My Profile')
 
 WebUI.closeBrowser()
-
-WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/ChangeProfile/CP-014/2.png')
-
-WebUI.verifyTextPresent('Berhasil', false)
-WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/ChangeProfile/CP-014/3.png')
-
-WebUI.click(findTestObject('Web/Dashboard-MyProfile/button_OK'))
-WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/ChangeProfile/CP-014/4.png')
-
-def text = WebUI.getText(findTestObject('Web/Dashboard-MyProfile/p_name'))
-
-WebUI.verifyEqual(text, name)
-WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/ChangeProfile/CP-014/5.png')
-
-
-WebUI.closeBrowser()
-

@@ -23,7 +23,7 @@ WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), '+62895643
 WebUI.takeScreenshotAsCheckpoint('1. ganti phone number dengan value {phone}')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshotAsCheckpoint('2. tap button "Save Changes"')
+WebUI.takeScreenshotAsCheckpoint('2. tap button Save Changes')
 
 
 WebUI.verifyTextPresent('The whatsapp must be a number.', false)

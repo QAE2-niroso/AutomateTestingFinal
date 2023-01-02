@@ -19,22 +19,22 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Web/EditProfile/input_Fullname_name'), 'Yoshua 12345678912340987654321')
-WebUI.takeScreenshotAsCheckpoint('1. isi field fullanme dengan value {fullname}')
+WebUI.setText(findTestObject('Web/EditProfile/input_Fullname_name'), name)
+WebUI.takeScreenshotAsCheckpoint('1. isi field fullanme dengan value {name}')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshotAsCheckpoint('2. tap button "Save Changes"')
+WebUI.takeScreenshotAsCheckpoint('2. tap button Save Changes')
 
 
 WebUI.verifyTextPresent('Berhasil', false)
 
 
 WebUI.click(findTestObject('Web/Dashboard-MyProfile/button_OK'))
-WebUI.takeScreenshotAsCheckpoint('3. Tap tombol "oke" di modal Sukses Edit')
+WebUI.takeScreenshotAsCheckpoint('3. Tap tombol oke di modal Sukses Edit')
 
 def text = WebUI.getText(findTestObject('Web/Dashboard-MyProfile/p_name'))
 
-WebUI.verifyEqual(text, 'Yoshua 12345678912340987654321')
+WebUI.verifyEqual(text, name)
 WebUI.takeScreenshotAsCheckpoint('4. verifikasi perubahan di halaman My Profile')
 
 WebUI.closeBrowser()

@@ -23,10 +23,10 @@ WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), '-89456123
 WebUI.takeScreenshotAsCheckpoint('1. isi Phone dengan value {notelp}')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshotAsCheckpoint('2. tap button "Save Changes"')
+WebUI.takeScreenshotAsCheckpoint('2. tap button Save Changes')
 
 //Harusnya message error selainn ini =
-WebUI.verifyTextPresent('The whatsapp must be between 10 and 12 digits.', false)
+WebUI.verifyText('The whatsapp must be bigger than 0', false)
 WebUI.takeScreenshotAsCheckpoint('3. validasi pesan error')
 def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'class')
 

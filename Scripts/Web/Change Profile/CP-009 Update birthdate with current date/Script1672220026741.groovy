@@ -30,7 +30,7 @@ WebUI.takeScreenshotAsCheckpoint('1. Setel input birth_date dengan tanggal sekar
 
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshotAsCheckpoint('2. tap tombol Save C')
+WebUI.takeScreenshotAsCheckpoint('2. tap tombol Save Changes')
 
 WebUI.verifyTextPresent('Berhasil', false)
 WebUI.takeScreenshotAsCheckpoint('3. validasi pesan sukses')
@@ -40,7 +40,7 @@ WebUI.takeScreenshotAsCheckpoint('4. tap tombol OK ')
 def birth_hasil = WebUI.getText(findTestObject('Web/Dashboard-MyProfile/p_birth_date'))
 
 
-WebUI.verifyEqual(birth_hasil, '31-Dec-2015')
+WebUI.verifyEqual(birth_hasil, '31-Dec-2016')
 WebUI.takeScreenshotAsCheckpoint('5. validasi di halaman myProfile')
 WebUI.closeBrowser()
 

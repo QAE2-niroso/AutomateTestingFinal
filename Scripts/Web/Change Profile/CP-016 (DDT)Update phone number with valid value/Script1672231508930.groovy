@@ -27,13 +27,13 @@ WebUI.takeScreenshotAsCheckpoint('1. ganti phone number dengan value {phone}')
 
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshotAsCheckpoint('2. tap button "Save Changes"')
+WebUI.takeScreenshotAsCheckpoint('2. tap button Save Changes')
 
 WebUI.verifyTextPresent('Berhasil', false)
 WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/ChangeProfile/CP-016/4.png')
 
 WebUI.click(findTestObject('Web/Dashboard-MyProfile/button_OK'))
-WebUI.takeScreenshotAsCheckpoint('3. Tap tombol "oke" di modal Sukses Edit')
+WebUI.takeScreenshotAsCheckpoint('3. Tap tombol oke di modal Sukses Edit')
 
 
 def text = WebUI.getText(findTestObject('Web/Dashboard-MyProfile/p_phoneNumber'))

@@ -23,10 +23,9 @@ WebUI.clearText(findTestObject('Web/EditProfile/input_BirthDay_birth_date'), Fai
 WebUI.takeScreenshotAsCheckpoint('1. Kosongkan field birthdate ')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
-WebUI.takeScreenshotAsCheckpoint('2. click save Chage')
+WebUI.takeScreenshotAsCheckpoint('2. click save Chages')
 
 def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_BirthDay_birth_date'), 'class')
-
 print(attr)
 
 WebUI.verifyEqual(attr.contains('is-invalid'), true)
