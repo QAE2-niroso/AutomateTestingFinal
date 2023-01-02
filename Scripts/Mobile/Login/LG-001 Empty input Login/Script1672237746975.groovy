@@ -4,6 +4,7 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
@@ -17,7 +18,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.codingid.codingidhive.betastaging', FailureHandling.STOP_ON_FAILURE)
+def file = RunConfiguration.getProjectDir() + '/Data Files/demo.apk'
+
+Mobile.startApplication(file, true)
 
 Mobile.waitForElementPresent(findTestObject('Mobile/Beranda/navBeranda'), 0)
 
@@ -25,9 +28,17 @@ Mobile.tap(findTestObject('Mobile/Beranda/navBeranda'), 1)
 
 Mobile.tap(findTestObject('Mobile/Login/Login Here'), 1)
 
+Mobile.clearText(findTestObject('Mobile/Login/inputEmail'), 1)
+Mobile.takeScreenshotAsCheckpoint('1. kosongkan field email')
+
+Mobile.clearText(findTestObject('Mobile/Login/inputPassword'), 1)
+Mobile.takeScreenshotAsCheckpoint('2. kosongkan field password')
+
 Mobile.tap(findTestObject('Mobile/Login/VGBtnLogin'), 1)
+Mobile.takeScreenshotAsCheckpoint('3. tap button login')
 
 Mobile.waitForElementPresent(findTestObject('Mobile/Login/android.widget.TextView - Invalid Credential'), 3)
 
 Mobile.verifyElementText(findTestObject('Mobile/Login/android.widget.TextView - Invalid Credential'), 'Invalid Credential')
+Mobile.takeScreenshotAsCheckpoint('4. validasi pesan error')
 

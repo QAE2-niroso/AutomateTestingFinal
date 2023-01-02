@@ -19,18 +19,18 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
-
 WebUI.setText(findTestObject('Web/EditProfile/input_Fullname_name'), 'uvuvwevwevwe onyetenyevwe ugwemuhwem osas')
+WebUI.takeScreenshotAsCheckpoint('1. isi field fullname dengan value {fullname}')
 
 WebUI.clearText(findTestObject('Web/EditProfile/input_Phone_whatsapp'))
+WebUI.takeScreenshotAsCheckpoint('2. Kosongkan field phone ')
 
-WebUI.clearText(findTestObject('Web/EditProfile/input_BirthDay_birth_date'))
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
+WebUI.takeScreenshotAsCheckpoint('3. tap button Save Changes ')
 
 WebUI.verifyTextPresent('The name may not be greater than 30 characters.', false)
-
+WebUI.takeScreenshotAsCheckpoint('4. validasi pesan error')
 def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Fullname_name'), 'class')
 
 print(attr)
@@ -40,7 +40,6 @@ WebUI.verifyEqual(attr.contains('is-invalid'), true)
 WebUI.comment('')
 
 WebUI.verifyTextPresent('The whatsapp field is required.', false)
-
 attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'class')
 
 print(attr)

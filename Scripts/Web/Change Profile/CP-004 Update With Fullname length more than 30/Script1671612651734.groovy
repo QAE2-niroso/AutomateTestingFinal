@@ -19,17 +19,21 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
-
 WebUI.setText(findTestObject('Web/EditProfile/input_Fullname_name'), 'Uvuwvwevwevwev Onyetemevew Ugweugwem Osas')
+WebUI.takeScreenshotAsCheckpoint(' isi field fullname dengan value {fullname}')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
+WebUI.takeScreenshotAsCheckpoint("2. tap button Save Changes")
 
 WebUI.verifyTextPresent('The name may not be greater than 30 characters.', false)
+WebUI.takeScreenshotAsCheckpoint('Muncul Pesan Error')
+
+
 def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Fullname_name'), 'class')
+
 print(attr)
 
-WebUI.verifyEqual(attr.contains("is-invalid"), true)
-
+WebUI.verifyEqual(attr.contains('is-invalid'), true)
+WebUI.takeScreenshotAsCheckpoint('Muncul tampilan error pada input')
 WebUI.closeBrowser()
 

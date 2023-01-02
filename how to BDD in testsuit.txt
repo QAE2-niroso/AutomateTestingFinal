@@ -1,0 +1,10 @@
+how to BDD in testsuite 
+- buat testcase 
+- tambahkan variabel yang diperlukan di tab variable, value kosong aja gpp 
+- tambah ke testcase tadi ke 1 testsuite baru 
+- cari show data binding 
+- tambah test data dari Data files yang dibuat 
+- di bagian bawah setel type nya jadi Data Column , 
+- stel test data yang dipake ,
+- stel kolom ,
+and Voila

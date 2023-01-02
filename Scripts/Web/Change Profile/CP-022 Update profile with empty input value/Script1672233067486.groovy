@@ -19,33 +19,33 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
-
 WebUI.clearText(findTestObject('Web/EditProfile/input_Fullname_name'), FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshotAsCheckpoint('1. Kosongkan field fullname')
+
 
 WebUI.clearText(findTestObject('Web/EditProfile/input_Phone_whatsapp'))
+WebUI.takeScreenshotAsCheckpoint('2. Kosongkan field phone ')
 
 WebUI.clearText(findTestObject('Web/EditProfile/input_BirthDay_birth_date'))
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
+WebUI.takeScreenshotAsCheckpoint('3. tap button Save Changes ')
 
 WebUI.verifyTextPresent('The name field is required.', false)
+WebUI.takeScreenshotAsCheckpoint('4. Validasi pesan error')
 
 def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Fullname_name'), 'class')
 
 print(attr)
 
 WebUI.verifyEqual(attr.contains('is-invalid'), true)
-
 WebUI.comment('')
 
 WebUI.verifyTextPresent('The whatsapp field is required.', false)
-
 attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'class')
 
 print(attr)
 
 WebUI.verifyEqual(attr.contains('is-invalid'), true)
-
 WebUI.closeBrowser()
 

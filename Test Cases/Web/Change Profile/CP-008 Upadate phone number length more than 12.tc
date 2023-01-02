@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>CP-008 Upadate phone number length more than 12</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>637623ef-e9e6-41f4-b2a4-fd43aa6f5e09</testCaseGuid>
-</TestCaseEntity>
