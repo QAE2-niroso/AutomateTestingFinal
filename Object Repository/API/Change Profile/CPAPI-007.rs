@@ -24,7 +24,7 @@
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;birth_date&quot;,
-      &quot;value&quot;: &quot;06-02-2000&quot;,
+      &quot;value&quot;: &quot;${date}&quot;,
       &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     }
@@ -60,6 +60,13 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>'2000-05-06'</defaultValue>
+      <description></description>
+      <id>120fa793-cc11-46af-9700-f897bef0315f</id>
+      <masked>false</masked>
+      <name>date</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
