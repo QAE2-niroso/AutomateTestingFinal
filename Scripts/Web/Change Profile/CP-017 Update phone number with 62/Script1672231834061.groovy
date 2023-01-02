@@ -19,19 +19,21 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Web/Change Profile/CP-001 ToProfile'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
-
 WebUI.setText(findTestObject('Web/EditProfile/input_Phone_whatsapp'), '+6289564311')
+WebUI.takeScreenshotAsCheckpoint('1. ganti phone number dengan value {phone}')
 
 WebUI.click(findTestObject('Web/EditProfile/button_Save Changes'))
+WebUI.takeScreenshotAsCheckpoint('2. tap button Save Changes')
+
 
 WebUI.verifyTextPresent('The whatsapp must be a number.', false)
+WebUI.takeScreenshotAsCheckpoint('3. validasi pesan error')
 
 def attr = WebUI.getAttribute(findTestObject('Web/EditProfile/input_Phone_whatsapp'), 'class')
-
 print(attr)
 
 WebUI.verifyEqual(attr.contains('is-invalid'), true)
+
 
 WebUI.closeBrowser()
 

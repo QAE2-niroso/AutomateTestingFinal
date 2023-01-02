@@ -19,6 +19,14 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.callTestCase(findTestCase('Web/Register/RG-003 - Go to Register Page (Website)'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Web/Register/Page_Be a Profressional Talent with Coding.ID/a_Sign Up'))
+WebUI.verifyElementPresent(findTestObject('Web/Register/Page_Be a Profressional Talent with Coding.ID/footer/h2_Site Map'), 
+    0)
+
+WebUI.verifyElementPresent(findTestObject('Web/Register/Page_Be a Profressional Talent with Coding.ID/a_Sign Up'), 0)
 
 WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg10/rg-1.png')
+
+WebUI.click(findTestObject('Web/Register/Page_Be a Profressional Talent with Coding.ID/a_Sign Up'))
+
+WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg10/rg-2.png')
+

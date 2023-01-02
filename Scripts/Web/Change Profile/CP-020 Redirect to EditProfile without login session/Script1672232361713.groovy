@@ -19,10 +19,13 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('https://demo-app.online/dashboard/profile')
+WebUI.takeScreenshotAsCheckpoint('1. mengganti URL ke halaman edit')
 
 def text = WebUI.getUrl()
 
 WebUI.verifyEqual('https://demo-app.online/login', text)
+WebUI.takeScreenshotAsCheckpoint('2.Redirect ke halaman Login')
+
 
 WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
 

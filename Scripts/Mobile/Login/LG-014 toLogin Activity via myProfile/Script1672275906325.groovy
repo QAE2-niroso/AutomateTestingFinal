@@ -3,7 +3,8 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.checkpoint.Checkpoint
+import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
@@ -16,12 +17,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.configuration.RunConfiguration
+def file = RunConfiguration.getProjectDir() + '/Data Files/demo.apk'
+Mobile.startApplication(file, true)
 
-Mobile.startExistingApplication('com.codingid.codingidhive.betastaging', FailureHandling.STOP_ON_FAILURE)
+Mobile.waitForElementPresent(findTestObject('Mobile/Beranda/navBeranda'), 1)
 
-Mobile.waitForElementPresent(findTestObject('Mobile/Beranda/navBeranda'), 0)
-
+Mobile.takeScreenshotAsCheckpoint('1. Menuju fragmen Profile')
 Mobile.tap(findTestObject('Mobile/Beranda/navEvent'), 1)
 
-Mobile.tap(findTestObject('Mobile/Login/Login Here'), 1)
 
+Mobile.tap(findTestObject('Mobile/Login/Login Here'), 1)
+Mobile.takeScreenshotAsCheckpoint('2. tap button login here')

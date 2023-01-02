@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>65e597a6-1405-4425-b897-8976b4c53454</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>247f7e3a-ae20-4921-bac6-c5994e786f73</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Yoshua 12345678912340987654321'</defaultValue>
+      <description></description>
+      <id>247f7e3a-ae20-4921-bac6-c5994e786f73</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
 </TestCaseEntity>

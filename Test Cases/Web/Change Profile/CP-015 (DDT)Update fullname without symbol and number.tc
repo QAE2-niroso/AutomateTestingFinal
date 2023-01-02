@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>92fe7663-c054-45b9-9f10-185703f0dc25</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e1ce06cd-3f37-4f6e-8836-2f1c1c93836d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Budiawan Santoso'</defaultValue>
+      <description></description>
+      <id>e1ce06cd-3f37-4f6e-8836-2f1c1c93836d</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
 </TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CPAPI-001 Update without berarer Token</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>695c8266-f23e-4b80-b461-0777e26398a9</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CPAPI-006 update profile with GET HTTP method</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5d044ae1-7f9e-4147-b747-a9ba8e9d418e</testCaseGuid>
+</TestCaseEntity>

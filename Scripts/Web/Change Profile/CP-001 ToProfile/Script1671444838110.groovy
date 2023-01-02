@@ -19,23 +19,25 @@ import org.openqa.selenium.Keys as Keys
 
 'Dikondisikan sudah login sebagai yoshuadwi@gmail.com , nanti\r\n'
 WebUI.openBrowser('https://demo-app.online/login')
-
 WebUI.maximizeWindow()
-
 WebUI.waitForElementPresent(findTestObject('Web/Login/input_Email_email'), 5)
 
 WebUI.setText(findTestObject('Web/Login/input_Email_email'), 'yoshuadwi@gmail.com')
-
 WebUI.setText(findTestObject('Web/Login/input_Kata                                                            Sandi_password'), 
     'yoshuadwi06')
-
 WebUI.click(findTestObject('Web/Login/button_Login'))
 
-WebUI.waitForElementPresent(findTestObject('Web/Home/LogoUser'), 2)
 
+WebUI.waitForElementPresent(findTestObject('Web/Home/LogoUser'), 2)
 WebUI.mouseOver(findTestObject('Web/Home/LogoUser'))
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-001/1.png')
 
 WebUI.click(findTestObject('Web/Home/a_My Account'))
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-001/2.png')
 
 WebUI.click(findTestObject('Web/Dashboard/a_Profil'))
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-001/3.png')
+
+WebUI.click(findTestObject('Web/Dashboard-MyProfile/a_Edit Profile'))
+WebUI.takeScreenshot('Screenshots/Web/ChangeProfile/CP-001/4.png')
 

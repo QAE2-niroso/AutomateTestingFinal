@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CPAPI-005 update field name with Initcap key</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2637248f-aa26-434f-9618-253b4d12bd42</testCaseGuid>
+</TestCaseEntity>
