@@ -19,11 +19,12 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.callTestCase(findTestCase('Web/Register/RG-007 - To Register with SiteMap in the footer of Homepage'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.takeFullPageScreenshotAsCheckpoint('Screenshots/Web/Register/rg12/rg-1.png')
+
 WebUI.click(findTestObject('Object Repository/button_Daftar'))
 
-WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg12/rg-1.png')
+WebUI.verifyElementAttributeValue(findTestObject('Object Repository/input_Nama_name'), 'validationMessage', 'Please fill out this field.', 
+    0)
 
-WebUI.verifyElementAttributeValue(findTestObject('Object Repository/input_Nama_name'), 'validationMessage', 
-    'Please fill out this field.', 0)
+WebUI.takeFullPageScreenshotAsCheckpoint('Screenshots/Web/Register/rg12/rg-2.png')
 
-WebUI.takeScreenshotAsCheckpoint('Screenshots/Web/Register/rg12/rg-2.png')
