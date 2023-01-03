@@ -20,12 +20,12 @@ import org.openqa.selenium.Keys as Keys
 
 WS.sendRequest(findTestObject('API/Change Profile/setValidDateProfile'))
 response = WS.sendRequest(findTestObject('API/Change Profile/Login'))
-date = WS.getElementPropertyValue(response, 'success.birth_date')
-print(date)
-WS.sendRequestAndVerify(findTestObject('API/Change Profile/CPAPI-007'), FailureHandling.CONTINUE_ON_FAILURE)
+birth_date = WS.getElementPropertyValue(response, 'success.birth_date')
+
+WS.sendRequestAndVerify(findTestObject('API/Change Profile/CPAPI-007',[('date'):date]), FailureHandling.CONTINUE_ON_FAILURE)
 
 response = WS.sendRequest(findTestObject('API/Change Profile/Login'))
-WS.verifyElementPropertyValue(response, 'success.birth_date', date)
+WS.verifyElementPropertyValue(response, 'success.birth_date', birth_date)
 
 
 
