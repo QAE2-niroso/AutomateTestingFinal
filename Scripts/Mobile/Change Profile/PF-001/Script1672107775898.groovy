@@ -17,10 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\User\\Desktop\\2022_QAEngineer_CODING.ID_ DWIDATA TALENTA PRIMA\\F I N A L\\START--no_replicating\\final_kat\\ProjectBootcamp\\Data Files\\Raw Data\\Mobile\\Demo_APP_CodingID_1.0.apk', 
-    true)
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
+import io.appium.java_client.AppiumDriver
 
-Mobile.tap(findTestObject('null'), 0)
+Mobile.callTestCase(findTestCase('Mobile/Change Profile/Pre-Kondisi'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('null'), 0)
+Mobile.comment('Akun sudah dibuat dan diverifikasi melalui email, serta telah login dan dalam posisi screen beranda')
 
+Mobile.takeScreenshotAsCheckpoint('Screenshots/Mobile/pf01/pf-01.png', [])
+
+Mobile.verifyElementExist(findTestObject('Mobile/Change_Profile/barProfile'), 0)
+
+Mobile.tap(findTestObject('Mobile/Change_Profile/barProfile'), 0)
+
+Mobile.takeScreenshotAsCheckpoint('Screenshots/Mobile/pf01/pf-02.png', [])
+
+// Mobile.verifyElementExist(findTestObject('Mobile/Change_Profile/viewProfile'), 0)
+//driver = MobileDriverFactory.getDriver()
+//driver.terminateApp('com.codingid.codingidhive.betastaging')

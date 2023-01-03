@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Mengunggah foto terbaru ke form profil akun CodingID mobile (app) dengan Kamera</description>
+   <name>PF-004</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>04d6aeb7-c1fb-4102-bfcc-4efa95ec10a4</testCaseGuid>
+</TestCaseEntity>
