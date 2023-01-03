@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Mengubah biodata pekerjaan</description>
+   <name>CPAPI-018 Update biodata with valid token</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e922da71-208c-4a20-bc18-add3680189f7</testCaseGuid>
+</TestCaseEntity>

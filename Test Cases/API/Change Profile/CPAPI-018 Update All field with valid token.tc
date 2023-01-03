@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Mengubah semua data dari nama sampai posisi pekerjaan</description>
+   <name>CPAPI-018 Update All field with valid token</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aad52059-a2a8-4a71-b122-6f8e20a39178</testCaseGuid>
+</TestCaseEntity>

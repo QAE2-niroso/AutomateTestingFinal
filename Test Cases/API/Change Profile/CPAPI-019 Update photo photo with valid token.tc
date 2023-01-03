@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Mengubah foto profile</description>
+   <name>CPAPI-019 Update photo photo with valid token</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ff314623-c33d-4540-95a2-d6e637166f74</testCaseGuid>
+</TestCaseEntity>
