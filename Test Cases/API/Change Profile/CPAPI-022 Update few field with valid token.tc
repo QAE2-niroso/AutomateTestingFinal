@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Mengubah beberapa data</description>
+   <name>CPAPI-022 Update few field with valid token</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b2e9f462-68b8-4fd6-b7d1-cbbc5ce1024b</testCaseGuid>
+</TestCaseEntity>
